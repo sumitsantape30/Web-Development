@@ -30,3 +30,6 @@ for( let i=1 ; i<= 10; i++){
 
 //single line print
 process.stdout.write("") // isme concatenate vagere kr skte hai
+
+process.stdout.write("Hello");
+process.stdout.write("Hello"); //output: HelloHello
