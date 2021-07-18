@@ -29,4 +29,4 @@ for( let i=1 ; i<= 10; i++){
 }
 
 //single line print
-process.stdout.print() // isme concatenate vagere kr skte hai
+process.stdout.write("") // isme concatenate vagere kr skte hai
