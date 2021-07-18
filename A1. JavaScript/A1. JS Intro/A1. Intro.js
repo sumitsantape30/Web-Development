@@ -27,3 +27,6 @@ console.log(a);
 for( let i=1 ; i<= 10; i++){
     console.log("Number is "+i);
 }
+
+//single line print
+process.stdout.print() // isme concatenate vagere kr skte hai
