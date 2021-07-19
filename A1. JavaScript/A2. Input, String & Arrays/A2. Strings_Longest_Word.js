@@ -21,15 +21,15 @@ Code:
 function longestWord(str){
     
     let arrStr= str.split(" "); // String ko array mai convert karenge
-    var max= 0;
-    var ans= "";
+    var maxlength= 0;
+    var longestWord= "";
 
     for( var i =0; i< arrStr.length; i++){
 
-        if( arrStr[i].length() > max){
-            max= arrStr[i].length;
-            ans= arrStr[i];
+        if( arrStr[i].length() >= maxlength){
+            maxlength= arrStr[i].length;
+            longestWord= arrStr[i];
         }
     }
-    console.log(ans);
+    console.log(longestword);
 }
