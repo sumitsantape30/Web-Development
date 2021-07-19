@@ -1,4 +1,3 @@
-//Today's Topic : Input, string, Array
 
 let a= 10;
 let str= "Hello I am \n String"+ a; //String mai concatenate karne keliye +a kr skte hai. String word muje next line mai chahiye so mai waha enter nhi mar skta siliye \n hai
