@@ -1,7 +1,6 @@
 Print the Longest Word in a String
 
 Input Format
-
 string
 
 Constraints
@@ -9,14 +8,12 @@ Constraints
 ''
 
 Output Format
-
 String
 
 Sample Input 0
-
 The quick brown fox jumped over the lazy dog
-Sample Output 0
 
+Sample Output 0
 jumped
 
 Code:
