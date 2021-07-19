@@ -4,6 +4,7 @@ let a= 10;
 let str= "Hello I am \n String"+ a; //String mai concatenate karne keliye +a kr skte hai. String word muje next line mai chahiye so mai waha enter nhi mar skta siliye \n hai
 console.log(str); 
 str= "Hello I am also a \nString" + a; // double quote or single quote wali string same hi hoti hai
+// + kiya to typecasting hojati hai aur , kiye to typecasting nhi hoti
 
 //aur ek tarika hai for string
 // usko hum template string bolte hai, it is enclosed inside backtick
