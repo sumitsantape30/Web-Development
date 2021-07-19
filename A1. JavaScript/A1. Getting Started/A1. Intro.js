@@ -1,6 +1,7 @@
 //no main -> isme main nhi hota
 // left to right and top to bottom code run hota hai
-console.log("Hello World") // print karne keliye
+console.log("Hello World"); // print karne keliye
+console.log("Hello World"); // dono alag alag line mai print honge it works like System.out.println(), statement print hone ke bad enter press hojata hai
 
 //variable declare, aur datatype dene ki jarurat nhi hoti
 let a;
@@ -33,3 +34,4 @@ process.stdout.write("") // isme concatenate vagere kr skte hai
 
 process.stdout.write("Hello");
 process.stdout.write("Hello"); //output: HelloHello
+//this works like System.out.print(), isme enter nhi press hota
