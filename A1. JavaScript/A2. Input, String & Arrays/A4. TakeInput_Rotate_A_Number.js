@@ -48,6 +48,36 @@ function rotate(n){
     console.log("number", number);
 
     // humare pas ab K and n aachuka hai so ab rotate karo
+    
+    function rotate(n){
+
+    let sa = n.split("\n");
+    let k= Number(sa[0]);
+    n= Number(sa[1]);
+
+    let temp= n;
+    let count=0;
+    while( temp > 0){
+        temp = Math.floor(temp/10);
+        count++;
+    }
+    
+    k = k % count;
+    if( k < 0){
+        k += count;
+    }
+
+    let mul= Math.pow(10, count-k);
+    let div= Math.pow(10, k);
+
+    let q= Math.floor(n/div);
+    let r= n % div;
+
+    let ans= r*mul + q;
+    console.log(ans);
+}
+
+rotate("3\n2562984");
 
 }
 
