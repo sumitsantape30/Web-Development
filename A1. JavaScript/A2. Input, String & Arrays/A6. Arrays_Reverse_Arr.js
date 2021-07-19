@@ -23,7 +23,7 @@ Code:
 
 function reverse(strArr){
 
-    let arr= JSON.parse();
+    let arr= JSON.parse(); //string which is similar to an array, use JSON.parse to convert it in integer array
 
     let left=0;
     let right= arr.length-1;
