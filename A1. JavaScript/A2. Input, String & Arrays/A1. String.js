@@ -36,7 +36,40 @@ let arrString= trimmedStr.split(" "); // mai trimmed string ko spaces ke basis k
 console.log("arr String", arrString);
 // convert array of string into a string on the basis of delimeter
 
-let ans= arrString.join("+"); // string array ke har character ke bad + dal rhe hai
+let ans= arrString.join("+"); // string array ke har character ke bad + dal rhe hai. aur array of String ko string mai convert kardeta hai
 console.log(ans);
 
+//=================================== Split And Trim=====================================
+
+let name= "Sumit";
+let str= `  Hello my name is ${name}`;
+// split se string convert hoti hai to the array of string
+let arrStr= str.split("a"); // mai string ko 'a' ke along break kr rha hu, means 'a' tak ek character banega then 'a' chhut jayega then next character 'a' ke bad se banega
+// so here 'a' is the delimiter, aur jo bhi delimiter hai uske basis pe split() string ka array banayega
+console.log(arrStr);
+
+
+// agar space ke alog split kiya to:
+let str= "   Hello this is sumit  ";
+let arstr= str.split(" ");
+console.log(arstr);
+//Output:
+[
+  '',      '',
+  '',      'Hello',
+  'this',  'is',
+  'sumit', '',
+  ''
+]  // isme usne spaces bhi le liye so isko trim karne jaruri hai koi bhi string input lene ke bad
+
+
+
+let str= "   Hello this is sumit  ";
+str= str.trim(); //koi bhi string input lene ke bad trim jarur kare
+let arrstr= str.split(" ");
+console.log(arrstr); //so abhi woh proper string ka array output dega
+
+// array of String ko string mai convert karenge
+let string= arrstr.join("+");
+console.log(string);
 
