@@ -20,7 +20,7 @@ console.log("sliced",slicedStr);
 //toLowerCase and toUpperCase yeh bhi function hota hai
 
 //String ko array of String mai convert karne keliye
-// on the basis of delimater -> array of String
+// on the basis of delimeter -> array of String
 let ArrayStr= str.split("a");
 console.log("Array of String", ArrayStr);
 
