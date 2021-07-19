@@ -22,8 +22,8 @@ jumped
 Code:
 
 function longestWord(str){
-
-    let arrStr= str.split(" ");
+    
+    let arrStr= str.split(" "); // String ko array mai convert karenge
     var max= 0;
     var ans= "";
 
