@@ -41,7 +41,6 @@ function rotate(n){
     //ek enter marne keliye " " wale mai escape sequence hot hai \n.
     //so hume yaha \n ke base pe split karna hai
     let inputArr= n.split("\n");
-    HTMLFormControlsCollection.log(inputArr);
     let k = Number(inputArr[0]); //Number mai typecast kiye
     let number= Number(inputArr[1]);
     console.log(input);
