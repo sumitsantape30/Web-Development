@@ -49,10 +49,10 @@ let arrStr= str.split("a"); // mai string ko 'a' ke along break kr rha hu, means
 console.log(arrStr);
 
 
-// agar space ke alog split kiya to:
+// agar space ke along split kiya to:
 let str= "   Hello this is sumit  ";
-let arstr= str.split(" ");
-console.log(arstr);
+let arrstr= str.split(" ");
+console.log(arrstr);
 //Output:
 [
   '',      '',
