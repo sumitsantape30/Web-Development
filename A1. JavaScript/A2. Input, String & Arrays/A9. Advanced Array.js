@@ -27,11 +27,13 @@ Output:
 
 -----------------------------------------------------------------------------------------------------
   
+  //function definition
  function fn(){
     console.log("I am a function");
     return 10;
 }
 
+//function ko call karna means function invocation
 let rVal= fn(); // function all hoke andar ka statement print hoga
 console.log(rVal);
 console.log("Function", fn); // function ko print karre
