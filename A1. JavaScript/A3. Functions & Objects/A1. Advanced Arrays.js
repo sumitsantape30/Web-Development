@@ -66,3 +66,31 @@ Hello I am a function inside an array
 rval from a fn
 
 --------------------------------------------------------------------------------------------------------------
+
+function fn(){
+    console.log("Hello I am a function")
+    return "Hello";
+}
+
+let tempArr= [1,2,3,15,5];
+let temp1Arr= tempArr;
+let arr = [
+    1,
+    true,
+    1,1,
+    "string",
+    null,
+    temp1Arr,
+    fn
+];
+
+console.log("2DArray", arr[arr.length-2]); // array print hoga
+console.log("access the ast element", arr[arr.length-1]); // hum yaha function ka address access kr rhe hai
+console.log("access the last element", arr[arr.length-1]()); //yahape use function ko call kr rhe hai aur jo value return ho rhi ahi woh print hogi
+// agar mera function koi value return nhi kr rha hai aur mai use print kr rha hu to undefined return kardega
+
+Output:
+2DArray [ 1, 2, 3, 15, 5 ]
+access the ast element [Function: fn]
+Hello I am a function
+access the last element Hello
