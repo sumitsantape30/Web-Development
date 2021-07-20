@@ -43,7 +43,6 @@ Function [Function: fn]
 
 --------------------------------------------------------------------------------------------------------------
 
-  
 let arr = [1,
     true,
      1.1,
@@ -52,14 +51,16 @@ let arr = [1,
         [1,2,3,4,5],
          function fn(){
     console.log("Hello I am a function inside an array")
+    return "rval from a fn";
 }]
 
 console.log(arr[arr.length-1]); // yeh bas function ka address mang rha hai, 
-console.log(arr[arr.length-1]()); // yahape mai uss function ke address pe hya aur uss function ko call kardiya
+// let rval= arr[arr.length-1]() aise karke bhi rval ko print kar skte hai
+console.log(arr[arr.length-1]()); // yahape mai uss function ke address pe hya aur uss function ko call kardiya. Aur woh function jo value return kar rha hai woh print hogi
 
 Ouput: 
 [Function: fn]
 Hello I am a function inside an array
-undefined
+rval from a fn
 
 --------------------------------------------------------------------------------------------------------------
