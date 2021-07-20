@@ -123,7 +123,7 @@ rVal Hello
     return "Hello";
 }
 
-function fn1(){
+function fn1(){ //agar humne fn1 print kiya to woh undefined dega koi value return nhi kr rha
     console.log("I am fn1");
 }
 
