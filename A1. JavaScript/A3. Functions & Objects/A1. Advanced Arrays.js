@@ -142,3 +142,36 @@ Hello I am a function
 rVal Hello
 
 =============================================================================================================================================
+
+ function fn(){
+    let val= fn1();
+    console.log(val);
+    console.log("Hello I am a function")
+    return "Hello";
+}
+
+function fn1(){ // fn1 ab value return kr rha hai so isko print karenge to ab undefined nhi ayega woh returned value print karega
+    console.log("I am fn1");
+    return 10;
+}
+
+let rval= fn(); 
+console.log("rval", rval);
+console.log("```````");
+console.log("rVal", fn()); 
+console.log("=========");
+console.log(fn1());
+
+Output:
+I am fn1
+10
+Hello I am a function
+rval Hello
+```````
+I am fn1
+10
+Hello I am a function
+rVal Hello
+=========
+I am fn1
+10
