@@ -57,3 +57,18 @@ let idx = arr.indexOf(3);
 console.log("idx", idx);
 
 //includes -> if check if an element is inside an array
+
+--------------------------------------------------------------------------------------------------------------------
+let arr= []; 
+function fn(){
+
+}
+
+console.log(typeof fn);
+console.log(typeof arr); //yeh object type deta hai
+console.log(Array.isArray(arr)); //function to check if it is an array
+
+Output:
+function
+object
+true
