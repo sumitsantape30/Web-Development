@@ -107,7 +107,7 @@ console.log("address",cap.varName); // . exact jake search krta hai object mai s
 
 
 //agar loop karna hai iska andar, iske liye "for in" loop hota hai object ke andar
-for( let key in cap){ //iss key ke andar ek ek key aate rahegi
+for( let key in cap){ //iss key ke andar ek ek key aate rahegi (iss "key" variable ko "pro" ya fir kuch bhi nam de skte ho)
     //console.log(key); // yeh sari keys print karega
 
     console.log(key, " : ", cap[key]);
