@@ -34,7 +34,7 @@ Output:
 }
 
 //function ko call karna means function invocation
-let rVal= fn(); // function all hoke andar ka statement print hoga
+let rVal= fn(); // function call hoke andar ka statement print hoga, aur woh function jo value return kr rha hai use rVal mai catch karenge
 console.log(rVal);
 console.log("Function", fn); // function ko print karre
 
