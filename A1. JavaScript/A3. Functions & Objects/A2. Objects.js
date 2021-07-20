@@ -1,11 +1,11 @@
-//onject represent krta hai kisiko
+//object represent krta hai kisiko
 
 //empty object create karne keliye
 let obj= {};
 
 //key: value pairs hoti hai
 //key ek string, number ho skti hai
-// valur kuch bhi le skte ho
+// value kuch bhi le skte ho
 let cap= {
     name: "Steve",
     lastName : "Rogers",
