@@ -35,3 +35,15 @@ process.stdout.write("") // isme concatenate vagere kr skte hai
 process.stdout.write("Hello");
 process.stdout.write("Hello"); //output: HelloHello
 //this works like System.out.print(), isme enter nhi press hota
+
+-----------------------------------------typeof---------------------------------
+console.log(typeof "Hello");
+console.log(typeof true);
+console.log(typeof null);
+console.log(typeof 10);
+
+Output:
+string
+boolean
+object
+number
