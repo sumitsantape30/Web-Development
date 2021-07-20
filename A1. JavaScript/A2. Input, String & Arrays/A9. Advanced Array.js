@@ -29,11 +29,37 @@ Output:
   
  function fn(){
     console.log("I am a function");
+    return 10;
 }
 
-fn(); // function all hoke andar ka statement print hoga
+let rVal= fn(); // function all hoke andar ka statement print hoga
+console.log(rVal);
 console.log("Function", fn); // function ko print karre
 
 Output:
 I am a function
+10
 Function [Function: fn]
+
+--------------------------------------------------------------------------------------------------------------
+
+  
+let arr = [1,
+    true,
+     1.1,
+      "string",
+       null,
+        [1,2,3,4,5],
+         function fn(){
+    console.log("Hello I am a function inside an array")
+}]
+
+console.log(arr[arr.length-1]); // yeh bas function ka address mang rha hai, 
+console.log(arr[arr.length-1]()); // yahape mai uss function ke address pe hya aur uss function ko call kardiya
+
+Ouput: 
+[Function: fn]
+Hello I am a function inside an array
+undefined
+
+--------------------------------------------------------------------------------------------------------------
