@@ -130,7 +130,7 @@ function fn1(){ //agar humne fn1 print kiya to woh undefined dega koi value retu
 let rval= fn(); // yaha hum function call honese pehle rval print nhi kr skte same thing niche wale mai bhi hai
 console.log("rval", rval);
 console.log("```````");
-console.log("rVal", fn()); //yahape bhi function call hone se hele hum console wali line print nhi kr skte
+console.log("rVal", fn()); //yahape bhi function call hone se pehele hum console wali line print nhi kr skte
 
 Output:
 I am fn1
