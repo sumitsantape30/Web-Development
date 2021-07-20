@@ -58,7 +58,7 @@ let arr = [1,
 
 console.log(arr[arr.length-1]); // yeh bas function ka address mang rha hai, 
 // let rval= arr[arr.length-1]() aise karke bhi rval ko print kar skte hai
-console.log(arr[arr.length-1]()); // yahape mai uss function ke address pe hya aur uss function ko call kardiya. Aur woh function jo value return kar rha hai woh print hogi
+console.log(arr[arr.length-1]()); // yahape mai uss function ke address pe gya aur uss function ko call kardiya. Aur woh function jo value return kar rha hai woh print hogi
 
 Ouput: 
 [Function: fn]
@@ -85,7 +85,7 @@ let arr = [
 ];
 
 console.log("2DArray", arr[arr.length-2]); // array print hoga
-console.log("access the ast element", arr[arr.length-1]); // hum yaha function ka address access kr rhe hai
+console.log("access the last element", arr[arr.length-1]); // hum yaha function ka address access kr rhe hai
 console.log("access the last element", arr[arr.length-1]()); //yahape use function ko call kr rhe hai aur jo value return ho rhi ahi woh print hogi
 // agar mera function koi value return nhi kr rha hai aur mai use print kr rha hu to undefined return kardega
 
