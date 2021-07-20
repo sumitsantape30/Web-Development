@@ -102,23 +102,43 @@ access the last element Hello
     return "Hello";
 }
 
-let tempArr= [1,2,3,15,5];
-let temp1Arr= tempArr;
-let arr = [
-    1,
-    true,
-    1,1,
-    "string",
-    null,
-    temp1Arr,
-    fn
-];
 
 let rval= fn(); // yaha hum function call honese pehle rval print nhi kr skte same thing niche wale mai bhi hai
 console.log("rval", rval);
 console.log("```````");
 console.log("rVal", fn()); //yahape bhi function call hone se hele hum console wali line print nhi kr skte
 
+Output:
+Hello I am a function
+rval Hello
+```````
+Hello I am a function
+rVal Hello
+
 =========================================================================================================================
   
-  
+ function fn(){
+     fn1();
+    console.log("Hello I am a function")
+    return "Hello";
+}
+
+function fn1(){
+    console.log("I am fn1");
+}
+
+let rval= fn(); // yaha hum function call honese pehle rval print nhi kr skte same thing niche wale mai bhi hai
+console.log("rval", rval);
+console.log("```````");
+console.log("rVal", fn()); //yahape bhi function call hone se hele hum console wali line print nhi kr skte
+
+Output:
+I am fn1
+Hello I am a function
+rval Hello
+```````
+I am fn1
+Hello I am a function
+rVal Hello
+
+==========================================================================================================================
