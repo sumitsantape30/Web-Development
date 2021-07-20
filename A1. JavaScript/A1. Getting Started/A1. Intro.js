@@ -39,7 +39,7 @@ process.stdout.write("Hello"); //output: HelloHello
 -----------------------------------------typeof---------------------------------
 console.log(typeof "Hello");
 console.log(typeof true);
-console.log(typeof null);
+console.log(typeof null); // typeof null 'object' type dega, its a bug in JS
 console.log(typeof 10);
 
 Output:
