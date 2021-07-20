@@ -13,6 +13,9 @@ console.log("Actual String: ",str);
 let charAt4= str.charAt(4); //to get character on that index
 console.log("Character at 4: ",charAt4);
 
+//koi character nikalke usko uppercase karna hai
+let charAt4= str.charAt(4).toUpperCase(); //mai yahape 4th character ko uppercase kr rha hu
+
 //slice means part bhi get kr skte hai from starting index to ending index-1
 let sliceStr= str.slice(4, 10); // print hote waqt 10 include nhi hoga
 console.log("sliced",slicedStr);
