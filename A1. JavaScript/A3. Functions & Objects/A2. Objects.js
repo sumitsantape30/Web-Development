@@ -122,3 +122,54 @@ isAvenger  :  false
 age  :  34
 sayHi  :  [Function: sayHi]
 address  :  { state: 'New York', city: 'NY City' }
+
+======================================================================================================================
+
+
+let cap= {
+    name: "Steve",
+    lastName : "Rogers",
+    friends : ["Peter","Bruce","Tony"],
+    isAvenger : false,
+    age : 34,
+    sayHi : function(){
+        console.log("Cap says Hi");
+    },
+    address:{ 
+        state: "New York",
+        city: "NY City",
+    }
+
+} 
+
+console.log(cap);
+//agar muje new key add karni hai
+cap.movies= ["first Avenger", "Civil War", "Winter Soldier"];
+cap.age= 45; //agar chize update karni hai
+
+//agar delete karni hai
+delete cap.address; //cap ke andar address delete karne keliye
+//delete cap.address.city -> address ke andar city delete karne keliye
+console.log("`````````````````");
+console.log(cap);
+
+Output:
+{
+  name: 'Steve',
+  lastName: 'Rogers',
+  friends: [ 'Peter', 'Bruce', 'Tony' ],
+  isAvenger: false,
+  age: 34,
+  sayHi: [Function: sayHi],
+  address: { state: 'New York', city: 'NY City' }
+}
+`````````````````
+{
+  name: 'Steve',
+  lastName: 'Rogers',
+  friends: [ 'Peter', 'Bruce', 'Tony' ],
+  isAvenger: false,
+  age: 45,
+  sayHi: [Function: sayHi],
+  movies: [ 'first Avenger', 'Civil War', 'Winter Soldier' ]
+}
