@@ -94,3 +94,31 @@ Output:
 access the ast element [Function: fn]
 Hello I am a function
 access the last element Hello
+
+======================================================================================================================================
+  
+  function fn(){
+    console.log("Hello I am a function")
+    return "Hello";
+}
+
+let tempArr= [1,2,3,15,5];
+let temp1Arr= tempArr;
+let arr = [
+    1,
+    true,
+    1,1,
+    "string",
+    null,
+    temp1Arr,
+    fn
+];
+
+let rval= fn(); // yaha hum function call honese pehle rval print nhi kr skte same thing niche wale mai bhi hai
+console.log("rval", rval);
+console.log("```````");
+console.log("rVal", fn()); //yahape bhi function call hone se hele hum console wali line print nhi kr skte
+
+=========================================================================================================================
+  
+  
