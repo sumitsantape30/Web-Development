@@ -7,7 +7,7 @@ console.log("Hello World"); // dono alag alag line mai print honge it works like
 let a;
 // variables ki default value hoti hai 'undefined'
 
-// isme only numbers hote hai ->  integers/float nhi hote hai
+// JS mai only numbers hote hai ->  integers/float nhi hote hai
 a= 10;
 //console.log(5/2); //2.5 dega output
 
