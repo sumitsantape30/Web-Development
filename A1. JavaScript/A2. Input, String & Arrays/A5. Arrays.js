@@ -45,7 +45,7 @@ console.log(arr);
 let slicedArr= arr.slice(1,3); // last index include nhi hota
 console.log("SliceedArr", slicedArr); //jo array slice hua woh isme ayega
 console.log("arr", arr);
-// arr.slice(1); sirt starting index de diya to yahase end tak slice karega
+// arr.slice(1); sirf starting index de diya to yahase end tak slice karega
 
 //splice -> deletes any of delete, means iss index se kitne numbers delete karne hai
 let removedElems= arr.splice(2,2); // 2nd index se leke 2 bande remove karega means 4 and 5 delete hoga aur baki bacha array de dega
