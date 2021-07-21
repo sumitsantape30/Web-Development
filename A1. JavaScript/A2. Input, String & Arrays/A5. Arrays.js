@@ -26,6 +26,8 @@ Output:
  
  let arr= [1,2,3,4,5,6];
 
+//PSSSI yad rakho
+
 // push pop -> add/remove last
 console.log(arr);
 arr.pop(); //last wala delete hoga
