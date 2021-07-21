@@ -5,7 +5,7 @@ let arr= [1,2,3,4,5];
 console.log(arr);
 
 for(let i=0; i< arr.length; i++){
-    console.log(i+" : "+arr[i]); // + liya to typecste hojayega string mai
+    console.log(i+" : "+arr[i]); // + liya to typecaste hojayega string mai
     console.log(i ," : ", arr[i]); // yeh typecaste nhi hoga string mai
 } //so mostly , wala hi use karo
 
