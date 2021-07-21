@@ -1,7 +1,7 @@
 //declaration
 let arr=[];
 
-//array is a colloection of homogenous data types, this is the definition in  JAVA and CPP
+//array is a collection of homogenous data types, this is the definition in  JAVA and CPP
 //array is a colllection of anything, this is in JS
 let arr= [1,true, 1.1, "string", null, [1,2,3,4,5]]; // mai isme intialise krte waqt array ka type nhi bta rha so isme hum koi bhi type ki values dal skte hai, so humne isme 1D array bhi dal diya
 console.log(arr); //complete array print hoga
