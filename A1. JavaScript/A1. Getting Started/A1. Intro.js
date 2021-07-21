@@ -24,7 +24,7 @@ console.log(a);
 //summary: variable -> declare default -> undefined
 // primitive types js:  undefined, numbers, string, boolean, null
 
-// loops, classes, conditional are similarto java
+// loops, classes, conditional are similar too java
 for( let i=1 ; i<= 10; i++){
     console.log("Number is "+i);
 }
