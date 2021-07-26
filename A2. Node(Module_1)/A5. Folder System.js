@@ -16,3 +16,7 @@ let currentPat = process.cwd(); //abhi aap konse folder ke andar ho
 let filePath= path.join( currentpath, "dir1", fileName); //
 console.log("filePath", filePath);
 fstat.writerFileSync(filePath, content);
+
+
+// let joinedPath= path.join(currentPath, "abc", "def", "efg");
+// console.log("JoinedPath", joinedPath); //jo current path hai usme abc def efg join hoajyega
