@@ -17,6 +17,3 @@ fs.writeFileSync("abc.txt", "Hum aaj khush nhi hai"); // isme hum file ki path k
 fs.appendFileSync("abc.txt", "Bhai khush kyu nhi hai"); //file ki path ke sath woh content ko update kardega, yahi content upar wale content ke sath append hojayega
 fs.unlinkSync("abc.txt"); //isse sara content delete hojayega, woh file abc.txt bhi remove hojayegi
 console.log("File Removed");
-
-//ab folders ke around kam karenge
-
