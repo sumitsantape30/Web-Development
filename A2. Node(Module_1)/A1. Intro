@@ -1,3 +1,5 @@
 1.Implementation framework deta hai, language (JS, Java, python) sirf logic deti hai
 2. JS se kuch bhi banana hai to environment chahiye, woh browser yafir Node js le skte hai, 
 3. Client - server : aap ne koi file keliye request mari with address fir server ne woh file dedi aur UI pe dikha diya
+
+Consider Node as a Smart phone, jaise mobile mai apps hoti hai waisehi node mai Modules hoti hai, inn modues ke sath interact karne keliye hum JS ka use krte hai
