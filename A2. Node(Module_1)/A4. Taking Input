@@ -18,3 +18,10 @@ Output:
 PS D:\Web Dev\JS\Getting Started\Module_1> Node fs.js Tree D:\Web\Dev\JS\Getting Started\Module_1\fs.js
 cmd Tree
 path D:\Web\Dev\JS\Getting
+
+.........................................................................................................................
+
+let currentPath= process.cwd(); // current path of the directory
+console.log("CurrentPath", currentpath);
+
+.....................................................................................................................
