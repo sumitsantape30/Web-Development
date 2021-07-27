@@ -20,7 +20,7 @@ cmd Tree
 path D:\Web\Dev\JS\Getting
 
 .........................................................................................................................
-
+// cwd : current working directory
 let currentPath= process.cwd(); // current path of the directory
 console.log("CurrentPath", currentpath);
 
