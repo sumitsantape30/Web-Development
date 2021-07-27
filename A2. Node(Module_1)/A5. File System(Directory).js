@@ -57,7 +57,7 @@ let fs= require("fs");
 let srcFilePath= "D:\\Web Dev\\JS\\Module_1\\myDirectory\\myfile.txt";
 let destDir= "D:\\Web Dev\\JS\\Module_1\\fs_organiser\\Examples";
 let tobeCopiedFileName= path.basename(srcFilePath);
-let destPath= path.join(destDir, tobeCopiedFileName);
+let destPath= path.join(destDir, tobeCopiedFileName); //jo file name hai usko destination directory ke andar copy karna hai so join kiye
 //console.log(tobeCopiedFileName); // jo file copy hone ja rhi hai uska nam dega
 fs.copyFileSync(srcFilePath, destPath);
 console.log("File Copied");
