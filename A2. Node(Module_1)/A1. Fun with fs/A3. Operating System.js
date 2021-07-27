@@ -2,7 +2,7 @@
 let os= require("os");
 console.log(os.arch()); // apn architecture kya hai print karega
 console.log(os.platform());
-console.log(os.networkInterfaces()); // yeh wifi ki sri information lake dega
+console.log(os.networkInterfaces()); // yeh wifi ki sari information lake dega
 console.log(os.cpus());
 
 Output:
