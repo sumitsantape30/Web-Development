@@ -45,3 +45,19 @@ console.log("isDirectory?", statsOfAPath.isDirectory()); // directory hai ya nhi
 let address= "D:\\Web Dev\\JS\\Getting Started\\Module_1"
 let content= fs.readdirSync(address);
 console.log("Directory Content",content); // content of the directory
+
+=====================================================================================================================================
+    //file copy karne keliye
+    
+let path= require("path");
+let fs= require("fs");
+
+ //file copy karne keliye
+// isme as a input aapko firstParameter mai dena hota hai srcFilePath (source file ki path means woh abhi kaha hai), destFilePath (kahape dalni hai woh path)
+let srcFilePath= "D:\\Web Dev\\JS\\Module_1\\myDirectory\\myfile.txt";
+let destDir= "D:\\Web Dev\\JS\\Module_1\\fs_organiser\\Examples";
+let tobeCopiedFileName= path.basename(srcFilePath);
+let destPath= path.join(destDir, tobeCopiedFileName);
+//console.log(tobeCopiedFileName); // jo file copy hone ja rhi hai uska nam dega
+fs.copyFileSync(srcFilePath, destPath);
+console.log("File Copied");
