@@ -36,6 +36,12 @@ process.stdout.write("Hello");
 process.stdout.write("Hello"); //output: HelloHello
 //this works like System.out.print(), isme enter nhi press hota
 
+// comparison, aithmatic => ( >,=,<), * / , rha to string(numbers bhi input lete waqt string form mai hi ata hai)  will be converted into number as input string mai hi hota hai
+let input= "10";
+let b=10;
+cnsole.log( input > 5);
+output: true
+
 -----------------------------------------typeof---------------------------------
 console.log(typeof "Hello");
 console.log(typeof true);
