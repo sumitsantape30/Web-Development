@@ -42,6 +42,12 @@ let b=10;
 cnsole.log( input > 5);
 output: true
 
+let input= "10";
+let b= 20;
+let ans= input + b; // b concatenate hoga input mai
+console.log(ans); //yeh concatenate wala case hai
+let ans= Number(input) + b; //ab input mai b add hoga coz hum trypecaste kiya hai
+console.log(ans);
 -----------------------------------------typeof---------------------------------
 console.log(typeof "Hello");
 console.log(typeof true);
