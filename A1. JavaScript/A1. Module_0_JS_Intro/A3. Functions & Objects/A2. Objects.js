@@ -8,7 +8,7 @@ let obj= {};
 // value kuch bhi le skte ho
 let cap= {
     name: "Steve",
-    lastName : "Rogers",
+    "lastName" : "Rogers",
     friends : ["Peter","Bruce","Tony"],
     isAvenger : false,
     age : 34,
@@ -18,7 +18,8 @@ let cap= {
     address:{ // object ke andar bhi object bana skte ho
         state: "New York",
         city: "NY City",
-    }
+    },
+    10: "My value is 10",
 
 } // yeh mera object bana hai 
 
@@ -35,6 +36,8 @@ console.log("movies", cap.movies);
 // to access the functions
 cap.sayHi();
 
+console.log("Last Name:" cap[last Name]); //last name aise access karenge
+console.log("10 value", cap[10]);
 //so humne yaha .(dot) ki help se chize access kari
 
 Output:
@@ -52,13 +55,14 @@ friends Bruce
 Age 34
 movies undefined
 Cap says Hi
-
+last name: rogrs
+10 value: 10
 ===============================================================================================================================
   
  
 let cap= {
     name: "Steve",
-    lastName : "Rogers",
+    "lastName" : "Rogers",
     friends : ["Peter","Bruce","Tony"],
     isAvenger : false,
     age : 34,
