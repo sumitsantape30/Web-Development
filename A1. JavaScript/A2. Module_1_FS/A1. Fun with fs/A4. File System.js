@@ -4,7 +4,7 @@ let content= fs.readFileSync("f1.txt") // koi file read karni hai, isme hum file
 
 console.log("Content: ", content); // jab read krte ho to by default yeh buffer mai deta hai, ab isko video, audio mai convert karna hai tumhari marzi
 //jo file hum read krte hai uske andar jo content aata hai woh binary mai aata hai jisko buffer bhi kaha jata h, and yahape buffer hexadecimal form mai ata hai aur + kiya to woh text mai convert hojata hai
-console.log("Content: "+ content); // yaha + krne se concate hoke string mai convert hogya, and a string is a text isliye iska output text mai ayega
+console.log("Content: "+ content); // yaha + krne se concate hoke string mai convert karke in a string form print kr skte ho
 
 // technical word for folders is directory
 // files ke upar hum read/write/update/delete kr skte hai
