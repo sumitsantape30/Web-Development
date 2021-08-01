@@ -36,6 +36,9 @@ console.log("movies", cap.movies);
 // to access the functions
 cap.sayHi();
 
+//whenever you have to access
+// 1. a key that has space in it 
+// 2. a key is of type number
 console.log("Last Name:" cap[last Name]); //last name aise access karenge
 console.log("10 value", cap[10]);
 //so humne yaha .(dot) ki help se chize access kari
