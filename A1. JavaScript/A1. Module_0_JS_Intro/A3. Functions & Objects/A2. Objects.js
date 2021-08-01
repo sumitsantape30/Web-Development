@@ -81,7 +81,7 @@ let cap= {
 
 // another way to access the properties is by square bracket []
 let varName= "address";
-console.log("address", cap[varName]);
+console.log("address", cap[varName]); //yeh varName ki value address ko search karega in cap ki keys mai
 console.log("address",cap.varName); // . exact jake search krta hai object mai so yaha yeh undefined deta hai
 
 Output:
