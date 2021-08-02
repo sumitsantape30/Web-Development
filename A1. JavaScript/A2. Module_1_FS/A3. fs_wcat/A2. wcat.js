@@ -8,7 +8,7 @@ let inputArr = process.argv.slice(2);
 let optionArr = [];
 let filesArr = [];
 
-// *****files path , options diffrentiate *******************
+// *****files path aur options diffrentiate karne keliye*******************
 for (let i = 0; i < inputArr.length; i++) {
     let firstChar = inputArr[i].charAt(0);
     if (firstChar == "-") {
