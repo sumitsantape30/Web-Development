@@ -17,7 +17,7 @@ for (let i = 0; i < inputArr.length; i++) {
         filesArr.push(inputArr[i]);
     }
 }
-// *************check if all the files are present************
+// ************* 1.check if all the files are present************
 for (let i = 0; i < filesArr.length; i++) {
     let ans = fs.existsSync(filesArr[i]);
     if (ans == false) {
@@ -25,7 +25,7 @@ for (let i = 0; i < filesArr.length; i++) {
         return;
     }
 }
-// *************content append**************** 
+// *************2. content append: single file or multiple file read karni hai **************** 
 let content = "";
 for (let i = 0; i < filesArr.length; i++) {
     let cFileContent = fs.readFileSync(filesArr[i])
