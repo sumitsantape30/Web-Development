@@ -59,3 +59,30 @@ undefined
 Thank you for calling me
 Thank you for calling me
 *Open Screenshot for memory allocation*
+
+//NEW EC----------------------------------------------------------------------------
+//jab function call hoga to new EC create hog
+// when function execution is finish: variables of that function will be deleted
+console.log("line number",a);
+var a; 
+a= 10;
+console.log(a);
+
+fn(); //har function call hone ke bad har bar new EC create hota hai
+function fn(){
+    console.log("line number 55",a);
+    var a= 10;
+    console.log("Thank you for calling me val of a is",a);
+}
+fn();
+
+Output:
+line number undefined
+10
+line number 55 undefined
+Thank you for calling me val of a is 10
+line number 55 undefined
+Thank you for calling me val of a is 10
+
+//EC---------------------------------------------------------------------------
+
