@@ -24,7 +24,7 @@ let a; //so jab hum let a; likhnte hai to hume 2 chize aur milti hai those are g
 // Execution context ke andar run karne keliye pehla part hota hai Creation Phase
 //Creation phase ke andar apke liye means jo variables,functions hai uske liye memory allocate hoti hai aur jo variable hai unki value undefined set ki jati hai
 //1. creation phase
-    // memory allocate
+    // memory allocate :> Hoisting (heavy word)
        //variables -> undefined
        //function -> memory allocate  (aur functions ko memory allocate hojati hai)
 
