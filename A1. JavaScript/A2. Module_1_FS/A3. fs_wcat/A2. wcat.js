@@ -59,15 +59,15 @@ let indexofB = optionArr.indexOf("-b");
 let finalOption = "";
 // both are present 
 // *******solve whether to implement -n or -s
-if (indexOfN > -1 && indexofB > -1) {
-    // index -> smaller
+if (indexOfN > -1 && indexofB > -1) { //means donobhi present hao,
+    //jiska index smaller hai to finalOption mai -n hojayega
     if (indexOfN < indexofB) {
         finalOption = "-n";
     } else {
         finalOption = "-b";
     }
 
-} else {
+} else { 
     // is there any option-> -n ,-b
     if (indexOfN > -1) {
         finalOption = "-n";
@@ -76,7 +76,7 @@ if (indexOfN > -1 && indexofB > -1) {
         finalOption = "-b";
     }
 }
-if (finalOption != "") {
+if (finalOption != "") { //agar finalOption non zero hai
     if (finalOption == "-n") {
         modifyContentByN();
     } else if (finalOption == "-b") {
@@ -91,6 +91,7 @@ function modifyContentByN() {
         contentArr[i] = i + " " + contentArr[i];
     }
 }
+
 function modifyContentByB() {
     let count = 1;
     for (let i = 0; i < contentArr.length; i++) {
