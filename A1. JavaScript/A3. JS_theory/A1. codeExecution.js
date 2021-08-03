@@ -48,3 +48,12 @@ function fn(){
     console.log("Thank you for calling me");
 }
 fn();
+
+Output:
+undefined
+undefined
+10
+[1,2,3,4,5];
+Thank you for calling me
+Thank you for calling me
+*Open Screenshot for memory allocation*
