@@ -32,6 +32,8 @@ let a; //so jab hum let a; likhnte hai to hume 2 chize aur milti hai those are g
 //2. Code Execution
        //left to right and top to bottom execute hoga code
 
+//jab stack ban jata hai, jo default value set hoti hai usko Global Execution Context bolte hai
+//EC is only created when a function is called
 
 //memory allocation kaise hoti hai?
 console.log(a);
