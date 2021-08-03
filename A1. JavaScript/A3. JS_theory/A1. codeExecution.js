@@ -24,9 +24,11 @@ let a; //so jab hum let a; likhnte hai to hume 2 chize aur milti hai those are g
 // Execution context ke andar run karne keliye pehla part hota hai Creation Phase
 //Creation phase ke andar apke liye means jo variables,functions hai uske liye memory allocate hoti hai aur jo variable hai unki value undefined set ki jati hai
 //1. creation phase
-    // memory allocate :> Hoisting (heavy word)
+    //a. memory allocate :> Hoisting (heavy word)
        //variables -> undefined
        //function -> memory allocate  (aur functions ko memory allocate hojati hai)
+    //b. this,global mil jayega depending kaha kam kr rhe ho
+    //c. 
 
 //memory allocate hone ke bad code execute hota hai
 //2. Code Execution
@@ -62,7 +64,7 @@ Thank you for calling me
 
 //NEW EC----------------------------------------------------------------------------
 //jab function call hoga to new EC create hog
-// when function execution is finish: variables of that function will be deleted
+// when function execution is finish: variables of that function will be destroyed
 console.log("line number",a);
 var a; 
 a= 10;
@@ -85,4 +87,43 @@ line number 55 undefined
 Thank you for calling me val of a is 10
 
 //EC---------------------------------------------------------------------------
+
+//other enviroment -> outer variable,function
+console.log("line number",a);
+var a; 
+a= 10;
+console.log(a);
+
+fn();
+function fn(){
+    console.log("line number 55",a);
+    a++;
+    console.log("Thank you for calling me val of a is",a);
+}
+fn();
+console.log("76", a);
+
+Output:
+line number undefined
+10
+line number 55 10
+Thank you for calling me val of a is 11
+line number 55 11
+Thank you for calling me val of a is 12
+76 12
+
+//lexical scope (heady word)----------------------------------------------------------
+// function where outer env is defined by where is the function definition exist
+var varName=1;
+function a(){
+    console.log(varName);
+}
+
+function b(){
+    var varName= 2;
+    a();
+}
+
+b();
+Output: 1
 
