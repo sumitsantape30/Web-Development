@@ -127,3 +127,27 @@ function b(){
 b();
 Output: 1
 
+//===================================================================================
+
+var a=10;
+function fn(){
+    var a= 20;
+    a++;
+    console.log("line number 101", a);
+    if( true){
+        var a= 30;
+        a++;
+        console.log("line number 101", a);
+    }
+    console.log("line number 107",a);
+}
+console.log("109",a);
+fn();
+console.log("111",a)
+
+Output:
+109 10
+line number 101 21
+line number 101 31
+line number 107 31
+111 10
