@@ -34,7 +34,7 @@ let a; //so jab hum let a; likhnte hai to hume 2 chize aur milti hai those are g
 
 //jab stack ban jata hai, jo default value set hoti hai usko Global Execution Context bolte hai
 //EC is only created when a function is called
-
+// aur function call hota hai execution stack se *open ScreenShot*
 //memory allocation kaise hoti hai?
 console.log(a);
 console.log(b);
