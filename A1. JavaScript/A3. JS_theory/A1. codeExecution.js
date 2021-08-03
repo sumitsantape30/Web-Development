@@ -28,8 +28,8 @@ let a; //so jab hum let a; likhnte hai to hume 2 chize aur milti hai those are g
        //variables -> undefined
        //function -> memory allocate  (aur functions ko memory allocate hojati hai)
 
-    //memory allocate hone ke bad code execute hota hai
-    //2. Code Execution
+//memory allocate hone ke bad code execute hota hai
+//2. Code Execution
        //left to right and top to bottom execute hoga code
 
 
