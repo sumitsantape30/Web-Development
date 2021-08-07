@@ -15,7 +15,7 @@ console.log("Content: "+ content); // yaha + krne se concate hoke string mai con
 fs.writeFileSync("abc.txt", "Hum aaj khush nhi hai"); // isme hum file name ke sath kuch content put kar skte hai
 // apne aap ek file create hogi named abc.txt
 
-//update
+//append
 // append bhi wahi krta hai, agar file exist nhi krti to file create karega aur content put karega aur agar file already exist krti hai to yeh content uss content mai append krdega
 fs.appendFileSync("abc.txt", "Bhai khush kyu nhi hai"); //file ki name ke sath woh content ko update kardega, yahi content upar wale content ke sath append hojayega
 
