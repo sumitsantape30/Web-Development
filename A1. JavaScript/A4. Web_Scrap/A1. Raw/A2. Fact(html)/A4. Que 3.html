@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* children combinators, just andar hai p div ke */
+         div>p { /*div p kiya hota to niche wale div mai bhi p hai so woh bhi run ho skta, but hume humara child chahiye so > */
+            color: blue;
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- select "I'm the direct son" and make it blue -->
+    <div>
+        <p>
+            I'm direct child
+        </p>
+    </div>
+
+    <div>
+        <span>
+            <p>
+                I'm the indirect child.
+            </p>
+        </span>
+    </div>
+    
+</body>
+</html>
