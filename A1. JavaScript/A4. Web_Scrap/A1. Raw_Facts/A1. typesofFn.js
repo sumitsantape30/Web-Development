@@ -35,11 +35,11 @@ exp();  //variable ko call kiya
 //IIFE -> Immediately invoke function expression
 (function fn(){
     console.log("I am an IFEE, i will be called immediately");
-}) //iss function pe jaisehi ayega yeh chal jayega isko alag se call karneki jarurat nhi hai
+})(); //iss function pe jaisehi ayega yeh chal jayega isko alag se call karneki jarurat nhi hai
 
 
 //arrow function -> react mai use hota hai
-let arrowFN= () => {
+let arrowFN = () => {
     console.log("I am function");
 }
 arrowFN();
