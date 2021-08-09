@@ -29,7 +29,7 @@ function cb(error, response, html) {
     //you can't get unique selectors always
     let elemRepArr= searchTool(".match-comment-wrapper .match-comment-long-text"); //hume bas searchtool ke andar selector pass karna hai, aur element representative mil jayega. hume waha koi bhi unique selector nhi mila so woh array deta hai coz multiple chize mili hai
    // console.log(elemRepArr.length);
-   //cram this-> jab apko iss searchTool se array mil rha hota hai, so aap is array ke kisi element ko access krte ho to apke paske sare functiona kho jate hai to apko dubara isko searchTool ke andar pass karna pdta hai
+   //cram this-> jab apko iss searchTool se array mil rha hota hai, so aap is array ke kisi element ko access krte ho to apke paske sare functions kho jate hai to apko dubara isko searchTool ke andar pass karna pdta hai
    let lbc= searchTool(elementArr[0]).text();
    console.log("last ball commentary", lbc);
 }
