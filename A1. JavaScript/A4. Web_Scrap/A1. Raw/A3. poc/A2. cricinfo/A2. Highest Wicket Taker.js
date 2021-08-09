@@ -40,9 +40,9 @@ function cb(error, response, html) {
     let bowler= "";
     let hwt= 0;
     for(let i=0; i< bowlers.length; i++){
-        searchTool(bowlers[i]).find("td"); //column nikal liye
-        let name= searchTool(col[0]).text();
-        let wickets= searchTool(col[4]).text();
+        let cols =searchTool(bowlers[i]).find("td"); //column nikal liye
+        let name= searchTool(cols[0]).text();
+        let wickets= searchTool(cols[4]).text();
         console.log(name+" "+wickets);
         if( wickets >= hwt){    //wickets : just compare karo aur highest wicket taker nikalo
             bowler= name;
