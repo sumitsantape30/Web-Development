@@ -24,9 +24,8 @@ function cb(error, response, html) {
 //so tumhe data extract karna hai to humare pas hoti hai cheerio
 
 // npm i request
-const { Cheerio } = require("cheerio");
 let request= require("request");
-let ch
+let ch  = require("cheerio");
 //data extract-> cheerio
 console.log("Before"); //request karne se pehle
 request('https://www.npmjs.com/package/cheerio' , cb); //yeh request bhi async tarike se kam krti hai coz hume nhi pta google kahase kitni der mai ayega. so yaha tum data pass karo aur agla call back pass karo 
