@@ -1,5 +1,4 @@
 //isme hume bowlers ke nam nikalne hai aur fir hume unke wicket ke basis pe, highest wicket taker ka nam aur wickets nikalna hai
-
 let request= require("request");
 let ch  = require("cheerio");
 const { fstat } = require("fs");
@@ -38,17 +37,24 @@ function cb(error, response, html) {
     //har ek bowler se uska name aur wickets nikalni hai
     //loop
     //name
+    let bowler= "";
+    let hwt= 0;
     for(let i=0; i< bowlers.length; i++){
         searchTool(bowlers[i]).find("td"); //column nikal liye
         let name= searchTool(col[0]).text();
         let wickets= searchTool(col[4]).text();
         console.log(name+" "+wickets);
+        if( wickets >= hwt){    //wickets : just compare karo aur highest wicket taker nikalo
+            bowler= name;
+            hwt= wickets;
+        }
     }
-    //wickets : just compare karo aur highest wicket taker nikalo
-    
+    console.log(bowler+" "+wickets);
+
 
 }
 console.log("After");
 
 /* 
 1. pehle table ko detect kiya fir run karke dekh name wickets konse column mai hai
+*/
