@@ -55,6 +55,6 @@ function cb(error, response, html) {
   console.log("After");
 
 /*
-1. so apko jist website se chize scrap krni hai uspe request lagayenge fir uska data dataExtractor(html) mai ayega fir function call karenge fir woh hume searchtool dega 
+1. so apko jis website se chize scrap krni hai uspe request lagayenge fir uska data dataExtractor(html) mai ayega fir function call karenge fir woh hume searchtool dega 
 */
 
