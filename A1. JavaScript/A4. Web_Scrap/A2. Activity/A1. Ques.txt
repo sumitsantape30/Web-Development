@@ -3,3 +3,8 @@ main page se apko All Matches wale page pe jana hai. (yahase har ek page link mi
 fir all matches ke page pe jake har ek match ke scorecard pe jayenge -> get link of all the scorecards
 then waha pohochne ke bad ek particular scorecard wale page pe request marni hogi uske call back ke andar, apko har ek player ka data nikalna hai then usko uske team ke andar folder banake file banake put karni hai aur agar pehlese hai to content append karna hai
 
+link --> Link
+     |
+      --->Output
+         |
+         -----> IPL
