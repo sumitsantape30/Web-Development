@@ -3,11 +3,11 @@ let helpObj = require("./command/help");
 let treeObj = require("./command/tree");
 let organizeObj = require("./command/organize");
 let inputArr = process.argv.slice(2);
-let command = inputArr[0];
+let command = inputArr[0]; //0th index pe command ayegi
 switch (command) {
     case "tree":
         // node main.js tree "C:\Users\Ritik Singh\Desktop\Batches\PP_12_21\JS\Module_1_FS\randomFolder"   
-        treeObj.treefxn(inputArr[1]);
+        treeObj.treefxn(inputArr[1]); //th index pe path rehti hai
         break;
         //  input -> node main.js organize "C:\Users\Ritik Singh\Desktop\Batches\PP_12_21\JS\Module_1_FS\randomFolder"
     case "organize":
