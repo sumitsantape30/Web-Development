@@ -15,15 +15,17 @@ let types = {//yeh types nam ka ek object hai jiske andar yeh pda hua hai ki kis
     app: ['exe', 'dmg', 'pkg', "deb"]
 }
 function organizeFn(srcPath) {
+    let organizedFilesPath
        // console.log("organize implemneted", srcPath);
     if (srcPath == undefined) { //agar function call krte waqt aapne kuch input nhi diya aur simply call kiya to tabhi call hojata hai, aap path pass nhi krte ho to woh apko undefined de dega so uska ek check lagana padega
 
         srcPath = process.cwd();
+        organizeHelper(srcPath, organizedFilesPath);
     }else{    //ab hume dekhna hoga ki jo input path aayi woh exist krti bhi hai ya nhi
         let doesExist= fs.existsSync(srcPath);
         if( doesExist){
             //agar exist krti hai to given path ke andar hume organised_file nam se ek directory banani hai
-            let organizedFilesPath = path.join(srcPath, "organized_files"); //isse humari path bn gyi of organised_file directory
+             organizedFilesPath = path.join(srcPath, "organized_files"); //isse humari path bn gyi of organised_file directory
             if (fs.existsSync(organizedFilesPath) == false) { //agar already exist nhi krti to new bana degi
                 fs.mkdirSync(organizedFilesPath);
             }
