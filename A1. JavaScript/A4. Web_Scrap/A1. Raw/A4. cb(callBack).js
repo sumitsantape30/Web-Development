@@ -28,3 +28,5 @@ console.log("arr", qbArr);
 Output:
 arr [ 1, 4, 9, 16, 25 ]
 arr [ 1, 8, 27, 64, 125 ]
+
+*Memory Allocation keliye see ScreenShot
