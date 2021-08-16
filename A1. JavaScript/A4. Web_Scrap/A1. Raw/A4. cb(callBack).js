@@ -24,3 +24,7 @@ let sqArr= bigger(arr, smaller); //so function call ke andar function pass krte 
 console.log("arr", sqArr);
 let qbArr= bigger(arr, cuber);
 console.log("arr", qbArr);
+
+Output:
+arr [ 1, 4, 9, 16, 25 ]
+arr [ 1, 8, 27, 64, 125 ]
