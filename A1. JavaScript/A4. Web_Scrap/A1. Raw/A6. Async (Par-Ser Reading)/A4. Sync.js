@@ -1,4 +1,4 @@
-//yaha Sync mai aapne serially file ko read kiya 
+// Sync mai serially files ko read karne keliye 
 let fs= require("fs");
 console.log("before");
 let content= fs.readFileSync("f1.txt");
