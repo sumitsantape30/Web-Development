@@ -3,7 +3,7 @@
 
 // npm i request
 let request= require("request");
-let ch  = require("cheerio");
+let cheerio  = require("cheerio");
 //data extract-> cheerio
 
 let url= "https://www.espncricinfo.com/series/ipl-2020-21-1210595/sunrisers-hyderabad-vs-royal-challengers-bangalore-3rd-match-1216534/ball-by-ball-commentary";
@@ -34,3 +34,41 @@ function cb(error, response, html) {
    console.log("last ball commentary", lbc);
 }
   console.log("After");
+
+//=============================== YT =====================================================================
+let request= require("request");
+let cheerio= require("cheerio");
+let url= "https://www.espncricinfo.com/series/ipl-2020-21-1210595/royal-challengers-bangalore-vs-sunrisers-hyderabad-eliminator-1237178/ball-by-ball-commentary";
+console.log("Before");
+request(url, cb);
+console.log("After");
+
+function cb(error, response, html){
+
+    if(error){
+        console.log("error: "+error);
+    }else if( response.statusCode == 404){
+        console.log("Page Not Found");
+    }else{
+        dataExtractor(html);
+    }
+}
+
+function dataExtractor(html){
+
+    let searchTool= cheerio.load(html);
+    let commentArr= searchTool(".match-comment-long-text>p");
+    let text= searchTool(commentArr[1]).text();
+    let htmlData= searchTool(commentArr[1]).html();
+
+    console.log("Text data: "+text);
+    console.log("HTML Data: "+htmlData);
+
+}
+
+Output:
+before
+After
+Text data: Kane Williamson: It was a tough game. It was always gonna be against a class side like RCB. With the quality of their batting, restricting them to 132 said 1) we bowled well, 2) it wasn't going to be easy. It was a challenge to restrict them. We had time, but with two world class legspinners it was never going to be easy. We had to try and get through their spells and they didn't give us much at all. It was just nice that we could get through their overs without losing too many wickets. You try and do your role as well as you can. Batting at 4, it can vary a lot, and surface dependent. It was nice to spend time and make a contribution, put some partnerships together. It's been an interesting last two weeks for us. [Holder] is cooler than me! He's playing beautifully.
+HTML Data: <b>Kane Williamson:</b> It was a tough game. It was always gonna be against a class side like RCB. With the quality of 
+their batting, restricting them to 132 said 1) we bowled well, 2) it wasn't going to be easy. It was a challenge to restrict them. We had time, but with two world class legspinners it was never going to be easy. We had to try and get through their spells and they didn't give us much at all. It was just nice that we could get through their overs without losing too many wickets. You try and do your role as well as you can. Batting at 4, it can vary a lot, and surface dependent. It was nice to spend time and make a contribution, put some partnerships together. It's been an interesting last two weeks for us. [Holder] is cooler than me! He's playing beautifully. <br><br>
