@@ -1,5 +1,5 @@
 //hume isme data mangana hai
-// npm i request
+// npm i request : request ek module hai npm mai
 let request= require("request");
 console.log("Before"); //request karne se pehle
 request('http://www.google.com' , cb); //yeh request bhi async tarike se kam krti hai coz hume nhi pta google kahase kitni der mai ayega. so yaha tum data pass karo aur agla call back pass karo 
