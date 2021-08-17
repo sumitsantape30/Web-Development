@@ -34,7 +34,7 @@ function cb(error, response, html) {
     //console.log('statusCode:', response && response.statusCode); // Print the response status code if a response was received
     //console.log('body:', body); // Print the HTML for the Google homepage.
     if( error){
-        console.log(error); //agar error hai to erro print krdo
+        console.log("error"+error); //agar error hai to erro print krdo
     }else if(response.statusCode == 404){ //agar hume response aa rha hai aur uska status code 404 hai 
         console.log("Page Not Found");
     }
