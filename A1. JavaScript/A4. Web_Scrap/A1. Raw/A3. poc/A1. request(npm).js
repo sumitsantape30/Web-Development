@@ -58,7 +58,7 @@ function cb(error, response, html) {
 1. so apko jis website se chize scrap krni hai uspe request lagayenge fir uska data dataExtractor(html) mai ayega fir function call karenge fir woh hume searchtool dega 
 */
 
-================ coronavirus data===========================
+================ Scarapping Coronavirus Data===========================
 let request= require("request");
 let cheerio= require("cheerio");
 let chalk= require("chalk"); //chalk sabse last mai install karna
