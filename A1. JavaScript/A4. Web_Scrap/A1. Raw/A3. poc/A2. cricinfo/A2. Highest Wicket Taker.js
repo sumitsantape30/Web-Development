@@ -26,13 +26,14 @@ function cb(error, response, html) {
     let searchTool= cheerio.load(html); 
     let bowlers= searchTool(".table.bowler tbody tr"); 
     //console.log(bowlerTables.length); // 2 hi tables hai
+      //ab iss table ko print karenge
     // let htmlData= "";
     // for(let i=0; i< bowlerTables.length; i++){
     //     //html function sara content lake deta hai
     //     htmlData += searchTool(bowlerTables[i]).html(); //htmlData mai append krte jayenge
     // }
     // fs.writeFilSync("table.html", htmlData);
-    //upar wala commented code bas table dikhane keliye ha
+    //upar wala commented code bas table dikhane keliye hai
     
     //har ek bowler se uska name aur wickets nikalni hai
     //loop
@@ -40,7 +41,7 @@ function cb(error, response, html) {
     let bowler= "";
     let hwt= 0;
     for(let i=0; i< bowlers.length; i++){
-        let cols =searchTool(bowlers[i]).find("td"); //column nikal liye
+        let cols =searchTool(bowlers[i]).find("td"); //column nikal liye. searchTool full page mai search krta hai but agar muje koi element ke andar jake search karna hai to uske liye hota hai find function
         let name= searchTool(cols[0]).text();
         let wickets= searchTool(cols[4]).text();
         console.log(name+" "+wickets);
@@ -58,3 +59,6 @@ console.log("After");
 /* 
 1. pehle table ko detect kiya fir run karke dekh name wickets konse column mai hai
 */
+
+========================================YT=============================================================================
+    
