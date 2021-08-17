@@ -45,7 +45,7 @@ function cb(error, response, html) {
   }
 
   function dataExtractor(html){ //so yeh humne banaya hua function hai
-    let searchTool= cheerio.load(); //cheerio mai load function mai hum apni html dete hai fir woh ek search ka tool deta hai
+    let searchTool= cheerio.load(html); //cheerio mai load function mai hum apni html dete hai fir woh ek search ka tool deta hai
     //load function wahi hai tumhar pure page mere dhund ke la skta hai
     let elemRep= searchTool("#readme>h1"); //this tool works like tum isme apne css ke selectors pass karo aur woh tumhe element lake dega
     //text nikalne keliye
