@@ -25,7 +25,7 @@ function cb(error, response, html) {
   }
 
   function dataExtractor(html){ 
-    let searchTool= cheerio.load(); 
+    let searchTool= cheerio.load(html); 
     //you can't get unique selectors always
     let elemRepArr= searchTool(".match-comment-wrapper .match-comment-long-text"); //hume bas searchtool ke andar selector pass karna hai, aur element representative mil jayega. hume waha koi bhi unique selector nhi mila so woh array deta hai coz multiple chize mili hai
    // console.log(elemRepArr.length);
