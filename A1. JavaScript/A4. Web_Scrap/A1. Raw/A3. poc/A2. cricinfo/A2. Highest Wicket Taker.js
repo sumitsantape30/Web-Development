@@ -23,7 +23,7 @@ function cb(error, response, html) {
   }
 
   function dataExtractor(html){ 
-    let searchTool= cheerio.load(); 
+    let searchTool= cheerio.load(html); 
     let bowlers= searchTool(".table.bowler tbody tr"); 
     //console.log(bowlerTables.length); // 2 hi tables hai
     // let htmlData= "";
