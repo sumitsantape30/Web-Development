@@ -3,6 +3,7 @@
 let request= require("request");
 console.log("Before"); //request karne se pehle
 request('http://www.google.com' , cb); //yeh request bhi async tarike se kam krti hai coz hume nhi pta google kahase kitni der mai ayega. so yaha tum data pass karo aur agla call back pass karo 
+  console.log("After");
 function cb(error, response, html) {
     //console.error('error:', error); // Print the error if one occurred
     //console.log('statusCode:', response && response.statusCode); // Print the response status code if a response was received
@@ -17,8 +18,7 @@ function cb(error, response, html) {
         console.log("html:", ) 
     }
   }
-  console.log("After");
-
+//before after pehle print hojayega fir badme pura html code print hoga 
 **************
 //humare pas jo html code aya usme dhundna boht difficult hai
 //so tumhe data extract karna hai to humare pas hoti hai cheerio
