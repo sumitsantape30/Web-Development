@@ -58,3 +58,44 @@ function cb(error, response, html) {
 1. so apko jis website se chize scrap krni hai uspe request lagayenge fir uska data dataExtractor(html) mai ayega fir function call karenge fir woh hume searchtool dega 
 */
 
+================ coronavirus data===========================
+let request= require("request");
+let cheerio= require("cheerio");
+let chalk= require("chalk"); //chalk sabse last mai install karna
+console.log("Before");
+let url= "https://www.worldometers.info/coronavirus";
+request(url, cb);
+console.log("After");
+function cb(error, response, html){
+
+    if( error){
+        console.log(error);
+    }else if( response.statusCode == 404){
+        console.log("Page Not found");
+    }else{
+        dataExtractor(html);
+    }
+}
+
+function dataExtractor(html){
+
+    let searchTool= cheerio.load(html);
+    // let h1= searchTool("h1"); //jitne bhi h1s hai unka array lake dega
+    // console.log(h1.length);
+    let contentArray= searchTool("#maincounter-wrap span");
+    
+    //aap kabhi loop lagate ho yaha to ako [i] krte hi searchTool ke andar wrap karna hai
+    // for( let i=0; i< contentArray.length; i++){
+    //     let data= searchTool(contentArray[i]).text(); 
+    //     console.log("data "+ data);
+    // }
+
+    let total= searchTool(contentArray[0]).text();
+    let deaths= searchTool(contentArray[1]).text();
+    let recovered= searchTool(contentArray[2]).text();
+    console.log(chalk.gray("Total Cases: "+total));
+    console.log(chalk.red("Deaths: "+deaths));
+    console.log(chalk.green("Recovery: "+recovered));
+
+
+}
