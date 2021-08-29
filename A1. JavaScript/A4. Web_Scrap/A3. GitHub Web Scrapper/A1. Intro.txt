@@ -1,0 +1,2 @@
+humare pas jo bhi topic ka link de rakha hoga uska folder banega, aur uss topic ke andar jo top 8 repos ka apko ek pdf file banani hai. Har ek repo ki khudki pdf file banani hogi jahape uss repo ke 
+saare issues pde hone chahiye.
