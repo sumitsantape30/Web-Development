@@ -1,3 +1,5 @@
+// agar folders banane hai aur usme files banani hai jo data contain kare
+
 // let url = "https://www.espncricinfo.com/series/ipl-2020-21-1210595/mumbai-indians-vs-chennai-super-kings-1st-match-1216492/full-scorecard";
 let request = require("request");
 let cheerio = require("cheerio");
