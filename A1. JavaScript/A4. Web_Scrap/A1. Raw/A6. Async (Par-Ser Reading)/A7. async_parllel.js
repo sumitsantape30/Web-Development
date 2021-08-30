@@ -8,7 +8,7 @@ for(let i=0; i < files.length; i++){
 }
 
 function cb(err, data){
-    console.log(data.byteLength); //ek file ke andar kitna content hai 
+    console.log(data.byteLength); //ek file ke andar kitna data/content hai 
     console.log("Content: "+data);
 }
 
