@@ -66,7 +66,7 @@ function newcb(error, response, html) {
       //pehle maine players ginle 
         if (bowlersArr.length == bowlersCount) { //jab mere bowlers array mai unte log hai jitne bowlers ka count hai tab mera kam hojayega
             console.table(bowlersArr);
-            sortBirthDay(bowlersArr);
+            sortBirthDay(bowlersArr); //bithday wise sort kardega
         }
     }
 }
@@ -80,29 +80,33 @@ function getBirthDay(html) {
 console.log("After");
 
 
-function sortBirthDay(bowlersArr) {
+function sortBirthDay(bowlersArr) { // birthday wala array ayega input mai
     // sort
-    // age -> convert
-    let newArr = bowlersArr.map(singleFn);
-    function singleFn(obj) {
+    // hum yahape sorting age ke basis pe kr rhe hai 
+    //age ko convert krenge
+    let newArr = bowlersArr.map(singleFn); //map ek function hota hai usme single function pass karna hota hai, yeh map singleFn ko call karega har ek function keliye
+    function singleFn(obj) {  
+        //object mai age aur name pdi hui hai
         let name = obj.name;
         let age = obj.age;
         let ageArr = obj.age.split(" ");
-        let years = ageArr[0].slice(0, ageArr[0].length - 1);
-        let days = ageArr[1].slice(0, ageArr[1].length - 1);
-        let ageInDays = Number(years) * 365 + Number(days)
+        let years = ageArr[0].slice(0, ageArr[0].length - 1); // isse years mai age ajayegi
+        let days = ageArr[1].slice(0, ageArr[1].length - 1); // 
+        let ageInDays = Number(years) * 365 + Number(days) //final age 
         return {
             name: name,
             ageInDays: ageInDays,
             age: age
         }
     }
-    let sortedArr = newArr.sort(cb);
+    //consle.log("newArr", ageArr); //isse days ke andar ajayega data
+    let sortedArr = newArr.sort(cb); // yeh sort kardega, aur hume btana pdta hai kiske basis pe
     // console.table(sortedArr);
-    function cb(objA, objB) {
-        return objA.ageInDays - objB.ageInDays;
+    function cb(objA, objB) { //comparator types smjho isko 
+        return objA.ageInDays - objB.ageInDays; // increasing order mai karna hai
     }
-    let finalArr = sortedArr.map(removeageIndays);
+    
+    let finalArr = sortedArr.map(removeageIndays); //agar age in days wali entry nhi chahiye to ise map remove krdo. map humesha ek new array deta hai yad rakho
     function removeageIndays(obj) {
         return {
             name: obj.name,
