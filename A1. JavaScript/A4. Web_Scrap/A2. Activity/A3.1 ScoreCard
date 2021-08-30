@@ -1,4 +1,4 @@
-// agar team ke nam se folders banane hai aur usme files banani hai players ke nam se jo data contain kare
+// agar team ke nam se folders banane hai aur usme files banani hai players ke nam se jo data contain kare aur fir excel file mai bhi karne keliye
 
 // let url = "https://www.espncricinfo.com/series/ipl-2020-21-1210595/mumbai-indians-vs-chennai-super-kings-1st-match-1216492/full-scorecard";
 let request = require("request");
