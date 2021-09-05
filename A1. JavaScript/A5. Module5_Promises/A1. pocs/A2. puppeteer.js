@@ -150,6 +150,7 @@ function handleIfNotPresent(selector, cPage) {
     return new Promise(function (resolve, reject) {
         // wait clickModal
         let waitAndClickPromise = waitAndClick(selector, cPage);
+            //chale tabhi thik hai nhi chale tab bhi thik hai dono isme hum resolve call krd denge
         waitAndClickPromise.then(function () {
             resolve();
         })
