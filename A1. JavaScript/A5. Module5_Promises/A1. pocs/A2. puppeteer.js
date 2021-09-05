@@ -123,6 +123,42 @@ browserStartPromise.then(function (browserObj) {
         console.log("level 1 will be opened");
     })
 
+//=== Yeh wala createpromises padhne ke bad dekhna==================================
+
+// user defined promise based function -> it will return  
+// a promise that will be 
+// resolved when the user has waited for element to appear as well as we have clicked on it
+function waitAndClick(selector, cPage) { //currentPage bhi pass karenge 
+    return new Promise(function (resolve, reject) {
+        let waitForModalPromise = cPage.waitForSelector(selector, { visible: true }); 
+        waitForModalPromise
+            .then(function () {
+                let clickModal =
+                    cPage.click(selector, { delay: 100 });
+                return clickModal;
+            }).then(function () {
+                resolve();
+            }).catch(function (err) {
+                reject(err)
+            })
+    }
+    )
+}
+// promise -> banner is present or not  -> the code will run 
+function handleIfNotPresent(selector, cPage) {
+    return new Promise(function (resolve, reject) {
+        // wait clickModal
+        let waitAndClickPromise = waitAndClick(selector, cPage);
+        waitAndClickPromise.then(function () {
+            resolve();
+        })
+        waitAndClickPromise.catch(function (err) {
+            resolve();
+        })
+    })
+}
+
+
     // browser.pages -> array of all the open tabs
 
     // .then(function (array) {
