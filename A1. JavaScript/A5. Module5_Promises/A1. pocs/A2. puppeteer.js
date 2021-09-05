@@ -125,6 +125,7 @@ browserStartPromise.then(function (browserObj) {
 
 //=== Yeh wala createpromises padhne ke bad dekhna==================================
 
+// upar jo 2 seperate functions likhe hai wait and click uske jagah hum yeh ek function bhi likh skte hai
 // user defined promise based function -> it will return  
 // a promise that will be 
 // resolved when the user has waited for element to appear as well as we have clicked on it
