@@ -17,7 +17,7 @@ browserStartPromise.then(function () {
 // creates headless browser
 let browserStartPromise = puppeteer.launch({ //yeh promise dega browser open hone ka
     // visible 
-    headless: false, // headless se browser visible rahega
+    headless: false, // headless se browser visible rahega, headless false kiya to browser run hote hue visible rahega aur true kiya to browser run hote hue nhi dikhega
     // type 1sec 
     //slowMo: 1000,
     defaultViewport: null,
