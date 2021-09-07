@@ -59,7 +59,7 @@ browserStartPromise.then(function (browserObj) {
         let browserTabOpenPromise = browserObj.newPage(); 
         return browserTabOpenPromise;
     }).then(function (newTab) {
-        page = newTab;
+        page = newTab; //current page pe jane keliye kam ayega isliye page liya
         console.log("new tab opened ")
         let gPageOpenPromise = newTab.goto("https://www.google.com/");
         return gPageOpenPromise;
@@ -69,7 +69,7 @@ browserStartPromise.then(function (browserObj) {
         let waitforTypingPromise = page.type("input[title='Search']", "pepcoding");
         return waitforTypingPromise;
     }).then(function () {
-        // keyboard se-> specific keys press karne kam ayega
+        // keyboard se-> specific keys press karne kam ayega  
         let enterWillBeDonePromise = page.keyboard.press('Enter', { delay: 100 });
         return enterWillBeDonePromise;
     }).then(function () { 
