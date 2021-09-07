@@ -20,9 +20,9 @@ let browserStartPromise = puppeteer.launch({ //yeh promise dega browser open hon
     headless: false, // headless se browser visible rahega, headless false kiya to browser run hote hue visible rahega aur true kiya to browser run hote hue nhi dikhega
     // type 1sec 
     //slowMo: 1000,
-    defaultViewport: null,
+    defaultViewport: null, //
     // browser setting 
-    args: ["--start-maximized", "--disable-notifications"]
+    args: ["--start-maximized", "--disable-notifications"] // browser maximized aur notification disable kiye
 });
 
 /*
