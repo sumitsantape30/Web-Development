@@ -44,7 +44,7 @@ browserStartPromise.then(function (browserObj) {
         return browserTabOpenPromise;
     }).then(function (page) {
         console.log("new tab opened ")
-        let gPageOpenPromise = newTab.goto("https://www.google.com/");
+        let gPageOpenPromise = page.goto("https://www.google.com/");
         return gPageOpenPromise;
     }).then(function () {
         console.log("Google home page opened");
