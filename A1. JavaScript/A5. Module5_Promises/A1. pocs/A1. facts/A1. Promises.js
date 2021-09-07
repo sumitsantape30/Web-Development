@@ -21,7 +21,7 @@ let freadPromise = fs.promises.readFile("f1.txt"); //fs.promises.readFile yeh de
 //console.log("promise", freadPromise); // yeh pending print karega coz humara promise abhi pending hi hai 
 //agar apka promise resolve hojayega to apka data iss call back mai dala jayega 
 // function pass -> resolve 
-freadPromise.then(function cb(data) {
+freadPromise.then(function cb(data) { //agar promise fulfil hua to yeh then wala part chalega and yeh function call hoga aur sathme data ajayega
     console.log("data " + data);
 })
 
