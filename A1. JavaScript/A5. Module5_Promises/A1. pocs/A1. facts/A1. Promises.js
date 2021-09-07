@@ -32,3 +32,5 @@ freadPromise.catch(function cb(err) {
 })
 
 console.log("After");
+
+//call back ke drawbacks hai isliye hum promises use krte hai
