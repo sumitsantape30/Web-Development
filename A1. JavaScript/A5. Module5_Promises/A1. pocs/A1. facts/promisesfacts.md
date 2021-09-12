@@ -1,6 +1,6 @@
-Promise => assurance of a work that could be completed in future.
+*Promise => assurance of a work that could be completed in future.
 
-future value inside that promise is determined by the function that returns the promise
+*future value inside that promise is determined by the function that returns the promise
 
 promise-> initial state-> pending, value -> undefined final state-> settled
 resolved -> you have got the future value rejected-> error
