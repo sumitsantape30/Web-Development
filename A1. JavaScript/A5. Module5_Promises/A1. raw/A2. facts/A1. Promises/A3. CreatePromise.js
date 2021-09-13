@@ -1,3 +1,5 @@
+*Firstly checkout the code in google doc then dry run them, then come here
+
 //promises hum khud bana bhi skte hai 
 // muje myPromisiedFsReader iss function ko aise build karna hai taki yeh promise ki tarah kam kare
 // jaise fs.promise.readFile kam krta tha waisehi myPromisiedFsReader iss function ko likhna chahte hai
