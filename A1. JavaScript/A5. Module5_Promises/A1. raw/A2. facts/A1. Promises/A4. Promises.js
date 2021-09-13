@@ -1,4 +1,5 @@
 // This code prooves frist 3 points of promisesfacts.md
+// Open book for theory and better understanding
 
 let fs = require("fs");
 function myPromisiedFsReader(filePath) {
