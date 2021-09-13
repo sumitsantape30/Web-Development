@@ -1,6 +1,6 @@
-// This code prooves 2 points of promisesfacts.md:> Promise => assurance of a work that could be completed in future.
+// This code prooves points of promisesfacts.md:> Promise => assurance of a work that could be completed in future.
 // promise-> initial state-> pending, value -> undefined final state-> settled resolved -> you have got the future value rejected-> error
-// Open book for theory and better understanding
+// Open book and google doc for theory and better understanding
 
 let fs = require("fs");
 function myPromisiedFsReader(filePath) {
