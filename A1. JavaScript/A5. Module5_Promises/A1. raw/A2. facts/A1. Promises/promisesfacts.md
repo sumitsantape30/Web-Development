@@ -15,7 +15,9 @@ resolved -> you have got the future value rejected-> error
 
 * the promise returned from that then depends upon the cb function inside that then
 
-* final state of promise returned from then/catch depends upon value returned from there cb => if cb returns then your promise will resolve into val=>val nothing=> undefined Error-> error Promise-> promise
+* final state of promise returned from then/catch depends upon value returned from there cb => if cb returns then your promise will resolve into 
+  val=>val(agar scb1 se val aayi to next wale then mai scb2 mai value pass hogi) nothing=> undefined Error-> error Promise-> promise
+ 
 
 * why are promises are actual better then callbacks
 
