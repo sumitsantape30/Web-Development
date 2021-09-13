@@ -21,27 +21,35 @@ function myPromisiedFsReader(filePath) {
     })
 
 }
+
+//yahase code run hoga
 console.log("Before");
 let fileReadPromise = myPromisiedFsReader("f1.txt");
 // state -> pending 
-console.log("24", fileReadPromise);
+console.log("24", fileReadPromise); //yaha 24 pending print hoga coz upar se pending promise return hua hai
 // 1sec -> async (1sec)
 // setTimeout(function () {
 //     console.log("11", fileReadPromise);
 // }, 1000);
+
 // function call -> then is synchronous 
-// this will always run async
-function scb(data) {
-    console.log("hello", data);
+// this proves 5th point, cb functions passed inside then and catch are async
+function scb(data) {// this will always run async
+    console.log("hello", data); //yeh sabse last mai print hoga
     // return new Error("This is a error");
 return undefined;
 }
+
 // console.log("33");
 // let thenNpromise = fileReadPromise.then(scb)
-fileReadPromise.then(scb).then(scb2);
+fileReadPromise.then(scb).then(scb2); //promise ko consume karne keliye tumhare pas set timeout ki jagah fileReadPromise hota hai aur yeh then function call hai, then is a synchronus function
+
+// catch wala case niche hai
+
 function scb2(data) {
     console.log("42", data);
-}``
+}
+
 // setTimeout(function () {
 //     console.log("41", thenNpromise)
 // }, 2000);
@@ -49,7 +57,7 @@ function scb2(data) {
 // function fcb(err) {
 //     console.log("hello", err);
 // }
-// fileReadPromise.catch(fcb);
+// fileReadPromise.catch(fcb); //apke pas jo promise hai uske upar catch laga doge to wobhi apna failure wala call back chal jayega
 // console.log("35")
 
 console.log("after");
