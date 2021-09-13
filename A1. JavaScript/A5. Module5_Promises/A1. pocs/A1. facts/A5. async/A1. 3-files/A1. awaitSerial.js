@@ -21,3 +21,4 @@ console.log("before");
 
 })();
 console.log("after");
+//then and catch ke alternative hai yeh
