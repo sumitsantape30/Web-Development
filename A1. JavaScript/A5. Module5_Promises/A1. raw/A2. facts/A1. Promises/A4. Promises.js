@@ -1,3 +1,4 @@
+// This code prooves frist 3 points of promisesfacts.md
 
 let fs = require("fs");
 function myPromisiedFsReader(filePath) {
