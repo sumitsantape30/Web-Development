@@ -1,3 +1,5 @@
+/* scb function attached by then can only be executed when a promise is resolved , fcb function attached by catch can only be executed when a promise is rejected */
+
 let obj = {
     name: "Steve",
     then: function (fn) {
@@ -8,8 +10,9 @@ let obj = {
     }
 }
 
-function scb() {
+function scb() { //jab 
     console.log("Hello");
 }
-let rVal = obj.then(scb);
+
+let rVal = obj.then(scb); //yeh then async tarike se call karega jab apka promise resolve hoga
 console.log("rVal",rVal);
