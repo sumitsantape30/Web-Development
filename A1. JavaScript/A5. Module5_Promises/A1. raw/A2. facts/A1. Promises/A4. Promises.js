@@ -41,7 +41,8 @@ return undefined;
 }
 
 // console.log("33");
-// let thenNpromise = fileReadPromise.then(scb)
+// let thenNpromise = fileReadPromise.then(scb) // thenNPromise wahi value store karege jo scb return karega. Jis prmise pr aap atach hue ho uske uske call back ke dware di gyi value thenNpromise mai store hogi
+// he promise returned from that then depends upon the cb function inside that then. final state of promise returned from then/catch depends upon value returned from there cb => if cb returns then your promise will resolve into val=>val nothing=> undefined Error-> error Promise-> promise
 fileReadPromise.then(scb).then(scb2); //promise ko consume karne keliye tumhare pas set timeout ki jagah fileReadPromise hota hai aur yeh then function call hai, then is a synchronus function
 
 // catch wala case niche hai
