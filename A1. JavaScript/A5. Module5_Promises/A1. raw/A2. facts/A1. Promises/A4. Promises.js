@@ -47,8 +47,8 @@ fileReadPromise.then(scb).then(scb2); //promise ko consume karne keliye tumhare 
 
 // catch wala case niche hai
 
-function scb2(data) {
-    console.log("42", data);
+function scb2(data) { //scb2 ke pas wahi data ayega jo scb ne return kiya
+    console.log("42", data); //yeh print karega, 42 undefined. coz scb undefined return kar rha hai
 }
 
 // setTimeout(function () {
