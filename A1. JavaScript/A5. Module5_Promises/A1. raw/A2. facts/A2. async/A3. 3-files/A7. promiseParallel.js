@@ -19,3 +19,5 @@ function cb2( content) {
     console.log("content" + content);
 }
 console.log("After");
+
+//so upar 3 function calls hai aur 3 callbacks hai
