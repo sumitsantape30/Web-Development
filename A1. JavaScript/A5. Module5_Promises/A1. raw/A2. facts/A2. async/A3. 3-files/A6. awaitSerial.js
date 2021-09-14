@@ -23,4 +23,5 @@ console.log("before");
 })();
 console.log("after");
 
+//yaha kam same hi hai bas likhne ka easy tarika hai
 //then and catch ka alternative hai yeh
