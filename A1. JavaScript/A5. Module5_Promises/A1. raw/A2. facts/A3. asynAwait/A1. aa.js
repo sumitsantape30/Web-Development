@@ -20,15 +20,15 @@ function myPromisiedFsReader(filePath) {
 
 //  older method of promise consuming, yeh purni method haai
 // let promise = myPromisiedFsReader("f1.txt");
-// promise
-// .then(function (data) {
+// promise.then(function (data) {
 //     console.log("data " + data)
 // }).catch(function (err) {
 //     console.log("err " + err);
 // })
 
+//promise consume karne keliye, ek async keyword hota hai isme
 (async function fn() {
-    try {
+    try { //using try catch wala syntax kr skte hai
         let promise = myPromisiedFsReader("f1.txt");
         let data = await promise; //instead of using then, aap await karloge aur direclty apke pas data ajyega
         console.log("data " + data);
@@ -36,3 +36,5 @@ function myPromisiedFsReader(filePath) {
         console.log("err" + err);
     }
 })();
+
+//await is replacement for then
