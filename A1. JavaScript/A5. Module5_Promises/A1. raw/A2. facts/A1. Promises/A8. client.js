@@ -13,7 +13,8 @@ function cb() { //analyzedata function apne andar cb kitni bar bhi call kr skta 
 }
 // yahatk code chalaye to woh 80 60 40 20 0 print karta hai, humko data analyze karna tha but uss library mai kuch galti hai aur usne tumhare cb ko multiple times call kardiya 
 
+//humne promisified function call kiya ispe
 let promiseP = libObj.promisifiedAnalyzedata("TV");
-promiseP.then(cb);
+promiseP.then(cb); //ab uss code mai resolve hua to cb chal jata hai 
 
 
