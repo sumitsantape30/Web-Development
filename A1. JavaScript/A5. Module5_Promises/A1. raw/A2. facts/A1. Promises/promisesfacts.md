@@ -19,7 +19,7 @@ resolved -> you have got the future value rejected-> error
   val=>val(agar scb1 se val aayi to next wale then mai scb2 mai value pass hogi) nothing=> undefined Error-> error Promise-> promise
  
 
-* why are promises are actual better then callbacks
+* why are promises are actual better then callbacks. (iska adha part book mai likha hai so do checkout)
 
 * promise cb priority is more then normal async fns
 
