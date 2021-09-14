@@ -39,8 +39,7 @@ let page, browser;
 })()
 
 //hk.js mai "question is solved" print karta hai tabtak ka converted code hai yahatk.
-
-
+//niche wala part bhi await mai convert kr skte ho
 
 // n number of question first 
 
