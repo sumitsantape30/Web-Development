@@ -5,3 +5,4 @@
 3. then A4. promises.js to prove 4th point, isme ab then and catch dalenge
 4. then open A6 methods.js for understanding chaining
 5. Points 6 to 9 are prooved in promises.js (Read carefully)
+6. why are promises are actual better then callbacks- yeh proove karne keliye open A7. lib.js aur fir A8.client.js
