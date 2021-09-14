@@ -24,3 +24,4 @@ module.exports = {
     analyzedata: analyzedata,
     promisifiedAnalyzedata: promisifiedAnalyzedata
 };
+
