@@ -77,3 +77,33 @@ let arrFn = outer();
 arrFn[0]();
 arrFn[1]();
 arrFn[2]();
+
+//====================================================================
+// for (var i = 0; i < 3; i++) {
+//     setTimeout(function () {
+//         console.log(i)
+//     }, 1000);
+// }
+//Output: 3 3 3 , yeh bhi dusra tarika hai of asking question
+
+//==================================================================
+
+function createIncrement() {
+    let count = 0;
+    function increment() {
+        count++;
+    }
+    let message = `Count is ${count}`;
+    function log() {
+        console.log(count);
+        console.log(message);
+    }
+    return [increment, log];
+}
+const arr = createIncrement();
+let increment = arr[0];
+let log = arr[1];
+increment();
+increment();
+increment();
+log();
