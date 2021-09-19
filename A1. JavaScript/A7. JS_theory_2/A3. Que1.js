@@ -48,6 +48,12 @@ let arrFno = outer();
 arrFno[0]();
 arrFno[1]();
 arrFno[2]();
+
+Output:
+0 3
+1 3
+2 3
+
 //================================================================
 // agar apko 0 1 2 hi print karna hai but without call function inside the loop
 
