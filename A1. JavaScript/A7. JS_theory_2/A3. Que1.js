@@ -55,7 +55,7 @@ Output:
 2 3
 
 //================================================================
-//agar humne loop ke andar var ki jagah let use kiya 
+//agar humne loop ke andar var ki jagah let use kiya (PDF and book open karna for dry run)
 // let ki case mai closure nhi banta apkse jo values hoti hai woh block se mil jati hai
 
 function outer() {
