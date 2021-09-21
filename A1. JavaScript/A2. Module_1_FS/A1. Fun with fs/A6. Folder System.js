@@ -10,12 +10,12 @@ let fileName= inputArr[0];
 let content= inputArr[1];
 console.log("FileName: ",fileName);
 console.log("Content: ", content);
-let currentPat = process.cwd(); //abhi aap konse folder ke andar ho 
+let currentPath = process.cwd(); //abhi aap konse folder ke andar ho 
 
 //path -> paths -> platform Independent
-let filePath= path.join( currentpath, "dir1", fileName); //
+let filePath= path.join( currentpath, "dir1", fileName); // currentPath ke andar dir1 folder banage aur usme file
 console.log("filePath", filePath);
-fstat.writerFileSync(filePath, content);
+fstat.writerFileSync("filePath", "content");
 
 
 // let joinedPath= path.join(currentPath, "abc", "def", "efg");
