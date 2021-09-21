@@ -3,7 +3,7 @@
    1. cp.execSync("calc");  // to open the calculator or website or any file
    2. cp.execSync("start chrome https:\\www.pepcoding.com"); // to open any website
 
-* <h3>File System 🤸‍♂️ </h3>
+* <h3>File System 🤸‍♂️</h3>
    <br>let fs= require("fs");
    1. let content= fs.readFileSync("f1.txt") // to read the content of any file. yeh jo content ayega wog buffer format mai rahega usme aap + append karke string mai convert kr skte ho
    2. fs.writeFileSync("abc.txt", "Hum aaj khush nhi hai"); // agar yeh file already exist nhi krti to yeh new file bana dega aur usme yeh content dal dega. aur agar already exist       krti hai to uska content change karke yeh input wala content dal dega
