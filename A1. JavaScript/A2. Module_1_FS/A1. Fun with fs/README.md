@@ -72,6 +72,13 @@
      <br>// __dirname matlab current path aur usme abc.js join kr rhe hai
      <br>let ext= path.extname(path.join(__dirname, "abc.js"));
      <br>console.group("ext", ext);
+   4. //basename
+     <br>// agr humari boht badi path hai aur last mai file name hai to woh apko file ka name de dega aur agar folder hai to folder ka name de dega
+     <br>let name= path.basename(__dirname); // yeh current path mai jo sbse last mai folder ka name hoga wohdega
+     <br>console.log(name);
+     <br>//agar iske last mai kisi file ka nam dedu to file dega
+     <br>name= path.basename(path.join(__dirname, "abc.js")); //humne currentPath mai abc.js ko join kiya
+     <br>console.log(name);
 
 
       
