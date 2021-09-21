@@ -64,7 +64,6 @@
     <br> console.log("FileName: ",fileName);
     <br> console.log("Content: ", content);
     <br> let currentPath = process.cwd(); //abhi aap konse folder ke andar ho 
-
     <br> //path -> paths -> platform Independent
     <br> let filePath= path.join( currentpath, "dir1", fileName); // currentPath ke andar dir1 folder banage aur usme file
     <br> console.log("filePath", filePath);
