@@ -5,6 +5,7 @@
 
 * <h3>File System 🤸‍♂️</h3>
    <br>let fs= require("fs");
+   
        <br>1. let content= fs.readFileSync("f1.txt") // to read the content of any file. yeh jo content ayega wog buffer format mai rahega usme aap + append karke string mai convert kr skte ho
        <br> 2. fs.writeFileSync("abc.txt", "Hum aaj khush nhi hai"); // agar yeh file already exist nhi krti to yeh new file bana dega aur usme yeh content dal dega. aur agar already exist       krti hai to uska content change karke yeh input wala content dal dega
        <br> 3. fs.appendFileSync("abc.txt", " we are one"); // yeh bhi wahi kam karega. agar file already exist krti hai to uss file ke content ke sath yeh wala content append kardega,          agar file exist nhi krti to new file create karega aur usme yeh content dal dega
