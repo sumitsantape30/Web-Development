@@ -17,4 +17,11 @@
       console.log("cmd:"+cmd);
       console.log("path: "+path);
    7. let currentPath= process.cwd(); // abhi hum currently konse path pe kam kr rhe hai woh path deta hai 
+
+* File System (Directory)
+   let fs= require("fs");
+    
+   1. fs.mkdirSync("myDirectory"); //mai abhi jis location pe hu wahape myDirectory nam ka folder ban jayega
+   2. fs.writeFileSync("myDirectory/myfile.txt", "my content"); //maine abhi jo directory banayi MyDirectory uske andar myfile nam ki file create kr rhe hai aur usme content dal rhe hai "my Content".
+   3. 
       
