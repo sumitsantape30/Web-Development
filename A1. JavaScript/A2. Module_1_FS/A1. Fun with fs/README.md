@@ -29,5 +29,6 @@
    <br> console.log(filesArr[i]+ " is removed");
     <br> fs.unlinkSync("myDirectory/"+filesArr[i]);
 <br>} 
+   5. fs.rmdirSync("myDirectory"); // agar directory remove karna hai to
 
       
