@@ -42,7 +42,9 @@
      <br>let address= "D:\\Web Dev\\JS\\Getting Started\\Module_1"
      <br>let content= fs.readdirSync(address);
      <br>console.log("Directory Content",content); // directory ke andar jitni bhi files hai uska array print karwa dega
-   9. To copy the files
+
+* <h3>File System(Path)</h3>
+  1. To copy the files
      <br>let path= require("path");
      <br>let fs= require("fs");
      <br> //file copy karne keliye
