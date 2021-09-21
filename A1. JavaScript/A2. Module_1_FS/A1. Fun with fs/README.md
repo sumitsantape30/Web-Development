@@ -58,7 +58,17 @@
      <br>fs.copyFileSync(srcFilePath, destPath);
      <br>console.log("File Copied");
    2. // agar koi folder ke andar koi file banai karni hai, input mai file ka name aur content ayega
-     
+    <br> let inputArr= process.argv.slice(2);
+    <br> let fileName= inputArr[0];
+    <br> let content= inputArr[1];
+    <br> console.log("FileName: ",fileName);
+    <br> console.log("Content: ", content);
+    <br> let currentPath = process.cwd(); //abhi aap konse folder ke andar ho 
+
+    <br> //path -> paths -> platform Independent
+    <br> let filePath= path.join( currentpath, "dir1", fileName); // currentPath ke andar dir1 folder banage aur usme file
+    <br> console.log("filePath", filePath);
+    <br> fstat.writerFileSync("filePath", "content");
 
 
       
