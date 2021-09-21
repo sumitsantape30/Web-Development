@@ -44,9 +44,10 @@
      <br>console.log("Directory Content",content); // directory ke andar jitni bhi files hai uska array print karwa dega
 
 * <h3>File System(Path)</h3>
+   <br>let path= require("path");
+    <br>let fs= require("fs");
+     
   1. To copy the files
-     <br>let path= require("path");
-     <br>let fs= require("fs");
      <br> //file copy karne keliye
      <br> // isme as a input aapko firstParameter mai dena hota hai srcFilePath (source file ki path means woh abhi kaha hai), destFilePath (kahape dalni hai woh path)
      <br>let srcFilePath= "D:\\Web Dev\\JS\\Module_1\\myDirectory\\myfile.txt";
@@ -56,6 +57,8 @@
      <br>//console.log(tobeCopiedFileName); // jo file copy hone ja rhi hai uska nam dega
      <br>fs.copyFileSync(srcFilePath, destPath);
      <br>console.log("File Copied");
+   2. // agar koi folder ke andar koi file banai karni hai, input mai file ka name aur content ayega
+     
 
 
       
