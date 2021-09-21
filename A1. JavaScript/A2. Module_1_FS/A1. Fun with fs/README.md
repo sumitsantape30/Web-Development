@@ -3,7 +3,7 @@
    1. cp.execSync("calc");  // to open the calculator or website or any file
    2. cp.execSync("start chrome https:\\www.pepcoding.com"); // to open any website
 
-* File System 🤸‍♂️
+* <h3>File System 🤸‍♂️ </h3>
    <br>let fs= require("fs");
    1. let content= fs.readFileSync("f1.txt") // to read the content of any file. yeh jo content ayega wog buffer format mai rahega usme aap + append karke string mai convert kr skte ho
    2. fs.writeFileSync("abc.txt", "Hum aaj khush nhi hai"); // agar yeh file already exist nhi krti to yeh new file bana dega aur usme yeh content dal dega. aur agar already exist       krti hai to uska content change karke yeh input wala content dal dega
@@ -18,7 +18,7 @@
      <br> console.log("path: "+path);
    7. let currentPath= process.cwd(); // abhi hum currently konse path pe kam kr rhe hai woh path deta hai 
 
-* File System (Directory)
+* <h3>File System (Directory) </h3>
    <br>let fs= require("fs");
     
    1. fs.mkdirSync("myDirectory"); //mai abhi jis location pe hu wahape myDirectory nam ka folder ban jayega
