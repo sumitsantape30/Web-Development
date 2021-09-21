@@ -30,5 +30,7 @@
     <br> fs.unlinkSync("myDirectory/"+filesArr[i]);
 <br>} 
    5. fs.rmdirSync("myDirectory"); // agar directory remove karna hai to
+   6. let doesExist= fs.existsSync("D:\\Web Dev\\Practice\\Fs_Practice\\funwithfs"); // yeh path exist krti hai ye nhi yeh dekhne keliye
+
 
       
