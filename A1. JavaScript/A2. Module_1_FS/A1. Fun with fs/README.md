@@ -44,7 +44,6 @@
    9. To copy the files
      <br>let path= require("path");
      <br>let fs= require("fs");
-
      <br> //file copy karne keliye
      <br> // isme as a input aapko firstParameter mai dena hota hai srcFilePath (source file ki path means woh abhi kaha hai), destFilePath (kahape dalni hai woh path)
      <br>let srcFilePath= "D:\\Web Dev\\JS\\Module_1\\myDirectory\\myfile.txt";
