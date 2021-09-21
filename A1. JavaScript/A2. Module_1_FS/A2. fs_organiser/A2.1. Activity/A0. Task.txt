@@ -1,5 +1,5 @@
 [] Help
-[] Organise : yeh original files ko remove nhi karega woh just roganised files ka ek folder bana dega jiske andar alag alag folders ke andar on the basis of their entensions inn folders ke andar iss type ki files chali jayegi
+[] Organise : yeh original files ko remove nhi karega woh just reoganised files ka ek folder bana dega jiske andar alag alag folders ke andar on the basis of their extensions inn folders ke andar iss type ki files chali jayegi
 [] Tree
 [] Global
 [] come good pratices
