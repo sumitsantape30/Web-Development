@@ -26,11 +26,11 @@ function organizeFn(srcPath) {
         if( doesExist){
             //agar exist krti hai to given path ke andar hume organised_file nam se ek directory banani hai
              organizedFilesPath = path.join(srcPath, "organized_files"); //isse humari path bn gyi of organised_file directory
-            if (fs.existsSync(organizedFilesPath) == false) { //agar already exist nhi krti to new bana degi
+            if (fs.existsSync(organizedFilesPath) == false) { //agar yeh already exist nhi krti to new folder bana denge
                 fs.mkdirSync(organizedFilesPath);
             }
 
-            //ab srcPath ke sabhi files ki category indentify krni padegi to usse pehle hume unko read karna hoga then hum identify kapayenge
+            //ab srcPath ke sabhi files ki category indentify krni padegi to usse pehle hume unko read karna hoga then hum identify karpayenge
             // iske liye mai alag hi function banaunga 
             organizeHelper(srcPath, organizedFilesPath); //source and destination path
 
@@ -45,7 +45,7 @@ function organizeFn(srcPath) {
 function organizeHelper(srcPath, organizedFilesPath){
     // hume jo source path provided hai aur tumhe iske andar ki sari files ko get karna hai aur indentify karna hai
 
-    let allTheFiles = fs.readdirSync(srcPath);
+    let allTheFiles = fs.readdirSync(srcPath); //srcPath mai jitne bhi files hai unka array mil jayega
      // console.log(allTheFiles); //so mere source path mai jitne bhi files hongi woh lake deta hai but muje paths chahiye unki taki mai unko uthakr apne destination folder mai dal saku
      //muje file ka nam nhi woh file kis address pe hai woh pta hona chahiye, fir unko bhi check karenge ki aap file ho ya folder, agar folder hai to muje koi lena dena nhi aur agar file hai to indentify karke organise karenge
      for (let i = 0; i < allTheFiles.length; i++) {
