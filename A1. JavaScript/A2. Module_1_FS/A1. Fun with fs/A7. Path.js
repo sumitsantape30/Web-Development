@@ -12,9 +12,9 @@ let ext= path.extname(path.join(__dirname, "abc.js"));
 console.group("ext", ext);
 
 // agr humari boht badi path hai aur last mai file name hai to woh apko file ka name de dega aur agar folder hai to folder ka name de dega
-let name= path.basename(__dirname); //yeh folder ka name de dega
+let name= path.basename(__dirname); // yeh current path mai jo sbse last mai folder ka name hoga wohdega
 console.log(name);
 //agar iske last mai kisi file ka nam dedu to file dega
-name= path.basename(path.join(__dirname, "abc.js"));
+name= path.basename(path.join(__dirname, "abc.js")); //humne currentPath mai abc.js ko join kiya
 console.log(name);
 
