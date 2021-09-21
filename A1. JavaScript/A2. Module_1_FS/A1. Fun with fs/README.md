@@ -31,6 +31,11 @@
 <br>} 
    5. fs.rmdirSync("myDirectory"); // agar directory remove karna hai to
    6. let doesExist= fs.existsSync("D:\\Web Dev\\Practice\\Fs_Practice\\funwithfs"); // yeh path exist krti hai ye nhi yeh dekhne keliye
+   7. //so jab input mai path ayega hume dekhna hoga ki yeh input mai ayi path ek file ki yafir folder ki path hai yeh dekhna hoga isliye function hai
+    <br>let statsOfAPath= fs.lstatSync("f1.txt");
+    <br>console.log("stats", statsOfAPath); // yeh pura stats dega jaise kitna time hua, size n all
+    <br>console.log("isFile?", statsOfAPath.isFile()); //file hai ya nhi 
+    <br>console.log("isDirectory?", statsOfAPath.isDirectory()); // directory hai ya nhi
 
 
       
