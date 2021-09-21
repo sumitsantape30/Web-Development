@@ -10,3 +10,4 @@
    2. fs.writeFileSync("abc.txt", "Hum aaj khush nhi hai"); // agar yeh file already exist nhi krti to yeh new file bana dega aur usme yeh content dal dega. aur agar already exist       krti hai to uska content change karke yeh input wala content dal dega
    3. fs.appendFileSync("abc.txt", " we are one"); // yeh bhi wahi kam karega. agar file already exist krti hai to uss file ke content ke sath yeh wala content append kardega,          agar file exist nhi krti to new file create karega aur usme yeh content dal dega
    4. fs.unlinkSync("abc.txt"); // file delete karne keliye
+   5. console.log(process.argv.slice(2)); // to take the user input, Node fs.js yeh do chize kam ki nhi hoti isliye slice krte hai
