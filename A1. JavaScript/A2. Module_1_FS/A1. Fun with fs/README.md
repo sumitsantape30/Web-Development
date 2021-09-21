@@ -68,6 +68,10 @@
     <br> let filePath= path.join( currentpath, "dir1", fileName); // currentPath ke andar dir1 folder banage aur usme file
     <br> console.log("filePath", filePath);
     <br> fstat.writerFileSync("filePath", "content");
+   3. // agar file ka extension name chahiye
+     // __dirname matlab current path aur usme abc.js join kr rhe hai
+let ext= path.extname(path.join(__dirname, "abc.js"));
+console.group("ext", ext);
 
 
       
