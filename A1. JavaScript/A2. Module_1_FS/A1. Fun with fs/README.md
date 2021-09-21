@@ -44,7 +44,7 @@
      <br>console.log("Directory Content",content); // directory ke andar jitni bhi files hai uska array print karwa dega
 
 * <h3>File System(Path)</h3>
-   <br>let path= require("path");
+   let path= require("path");
     <br>let fs= require("fs");
      
   1. To copy the files
