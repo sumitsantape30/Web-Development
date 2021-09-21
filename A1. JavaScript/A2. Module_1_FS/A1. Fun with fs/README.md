@@ -36,6 +36,10 @@
     <br>console.log("stats", statsOfAPath); // yeh pura stats dega jaise kitna time hua, size n all
     <br>console.log("isFile?", statsOfAPath.isFile()); //file hai ya nhi 
     <br>console.log("isDirectory?", statsOfAPath.isDirectory()); // directory hai ya nhi
+   8. //agar hume directory ki path mili hai aur hume dekhna hai usme konsi konsi files exist krti hai
+     <br>let address= "D:\\Web Dev\\JS\\Getting Started\\Module_1"
+     <br>let content= fs.readdirSync(address);
+     <br>console.log("Directory Content",content); // directory ke andar jitni bhi files hai uska array print karwa dega
 
 
       
