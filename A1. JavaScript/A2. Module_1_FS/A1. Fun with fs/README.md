@@ -28,5 +28,6 @@
     <br> for(let i=0; i< filesArr.length; i++){
    <br> console.log(filesArr[i]+ " is removed");
     <br> fs.unlinkSync("myDirectory/"+filesArr[i]);
-<br>} // 
+<br>} 
+
       
