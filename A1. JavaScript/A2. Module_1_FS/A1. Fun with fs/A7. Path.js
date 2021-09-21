@@ -7,7 +7,7 @@ for( let i=1; i <=10; i++){
     fs.writeFileSync(path.join(dirPathToMake, "readme.md"), `#readme for ${dirPathToMake}`); // join kiya to "\\" dene ki jarurat nhi woh khud smjh leta hai OS ke hisab se
 }
 
-
+// __dirname matlab current path aur usme abc.js join kr rhe hai
 let ext= path.extname(path.join(__dirname, "abc.js"));
 console.group("ext", ext);
 
