@@ -13,9 +13,9 @@
    6. //agar path aur command sathme input aye to unko separate karne keliye
       let inputArr= process.argv.slice(2);
       let cmd= inputArr[0];
-      let path= inputArr[1];
-      console.log("cmd:"+cmd);
-      console.log("path: "+path);
+     <br> let path= inputArr[1];
+     <br> console.log("cmd:"+cmd);
+     <br> console.log("path: "+path);
    7. let currentPath= process.cwd(); // abhi hum currently konse path pe kam kr rhe hai woh path deta hai 
 
 * File System (Directory)
@@ -23,5 +23,10 @@
     
    1. fs.mkdirSync("myDirectory"); //mai abhi jis location pe hu wahape myDirectory nam ka folder ban jayega
    2. fs.writeFileSync("myDirectory/myfile.txt", "my content"); //maine abhi jo directory banayi MyDirectory uske andar myfile nam ki file create kr rhe hai aur usme content dal rhe hai "my Content".
-   3. 
+   3. let filesArr= fs.readdirSync("myDirectory"); //myDirectory folder ke andar jinti bhi files hai unka array return kardega
+   4. uss folder ki sari files remove karne keliye
+    <br> for(let i=0; i< filesArr.length; i++){
+   <br> console.log(filesArr[i]+ " is removed");
+    <br> fs.unlinkSync("myDirectory/"+filesArr[i]);
+<br>} // 
       
