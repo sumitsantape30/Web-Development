@@ -41,6 +41,19 @@
      <br>let address= "D:\\Web Dev\\JS\\Getting Started\\Module_1"
      <br>let content= fs.readdirSync(address);
      <br>console.log("Directory Content",content); // directory ke andar jitni bhi files hai uska array print karwa dega
+   9. To copy the files
+     <br>let path= require("path");
+     <br>let fs= require("fs");
+
+     <br> //file copy karne keliye
+     <br> // isme as a input aapko firstParameter mai dena hota hai srcFilePath (source file ki path means woh abhi kaha hai), destFilePath (kahape dalni hai woh path)
+     <br>let srcFilePath= "D:\\Web Dev\\JS\\Module_1\\myDirectory\\myfile.txt";
+     <br>let destDir= "D:\\Web Dev\\JS\\Module_1\\fs_organiser\\Examples";
+     <br>let tobeCopiedFileName= path.basename(srcFilePath);
+     <br>let destPath= path.join(destDir, tobeCopiedFileName); //jo file name hai usko destination directory ke andar copy karna hai so join kiye
+     <br>//console.log(tobeCopiedFileName); // jo file copy hone ja rhi hai uska nam dega
+     <br>fs.copyFileSync(srcFilePath, destPath);
+     <br>console.log("File Copied");
 
 
       
