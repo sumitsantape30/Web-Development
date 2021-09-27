@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- document object model -->
+    <h1> Hello DOM</h1>
+    
+    <!-- <p> Hello </p> yeh kam muje without html karne keliye niche wali method use karni pdegi -->
+    <!-- html mai js code use karne keliye hota hai script tag -->
+    <script>
+        //html css ke code ko app create read update delete kr skte ho
+        // document is an apu hai jo present page ke complete html css ko represent karte hai aur uske functions hai 
+        //create
+        let p= document.createElement("p"); //iske andar aap jo bhi pas krte ho woh chiz ban jati hai
+        p.textContent = "Hello" ; //fir uss p mai properties add karni hai to
+        
+        //Read
+        // muje iss p ko append karna padega body mai so pehle body ko access karenge
+        let body = document.querySelector("body");
+        body.appendChild(p); //body ke nandar p tag add hojayega
+        
+        //update
+        setTimeout(function(){ // 1 second bad update hojayega
+            p.textContent= "Come Again";
+        }, 1000)
+
+        //delete
+        setTimeout(function (){ //2 second bad remove hojayega
+            p.remove();
+        }, 2000)
+
+        //add css using DOM
+        p.style.backgroundColor = "red";
+        
+    </script>
+    
+</body>
+</html>
