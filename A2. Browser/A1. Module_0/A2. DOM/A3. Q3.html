@@ -24,13 +24,12 @@
        <!-- Q. fix the list by making it go from 1 to 10. Use only querySelectorAll, createElement and insertBefore.
          list mai 7 nhi hai to woh fix karo -->
 
-         let lis=  document.querySelectorAll("li"); //sare lis nikal lo
-         //tumhe 8th ke pehle add karna hai 
-        
-        let ul= document.querySelector("ul");
-        let newLi = document.createElement("li"); // ek li banaya and ab isme 7 dalenge
+        let lis = document.querySelectorAll("li");
+        let ul = document.querySelector("ul");
+        let newLi = document.createElement("li");
         newLi.textContent = 7;
-        ul.insertBefore(newLi, lis[6]); //6th li se pehle newLi iss element ko add kardo 
+        // parentelem, newnode , before this node 
+        ul.insertBefore(newLi, lis[6]);
         
     </sctipt>
 
