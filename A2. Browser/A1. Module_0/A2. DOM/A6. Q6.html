@@ -704,6 +704,7 @@
     //apko pehle keyboard ke events dekhne honge ki konse key press hui hai 
     //keyboard mai 2 hi events hai mousedowm aur mouseup
     document.addEventListener("keydown", function (edescObj) { // addEventListener iss event keydown ko sunta rehta hai jaisehi yeh event occur ho to woh function chal jata hai, aur yahi addEventListener hume event ko describe karne keliye event ka descriptor(edescObj) ek object hume deta hai yeh uss event ko describe karta hai
+      //koi bhi event ko describe karne keliye yeh object humesha milta hai
       let keyPressed = edesc.key; //konsi key pressed hui
       // specifically designd for ids
       let s1 = document.getElementById('s1'); //s1 id ka element get karne keliye 
