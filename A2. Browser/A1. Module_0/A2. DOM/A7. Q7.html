@@ -36,23 +36,24 @@
         let input = document.querySelector("input");
         let p = document.querySelector("p");
 
+        //keyboard ke events:
         //key ko aap press krte ho to i.e. keydown and jab aap key ko release krte ho to i.e. keyup. and keypress means jab aap press karke release krte ho
         input.addEventListener("keydown", function (e) { //yeh e bhi event describe karne ke kam ata hai
             console.log("e", e);
             // you press caplock only once 
-            let isCapsOn = e.getModifierState("CapsLock"); //to check if caps lock is on or not. getModifierState yeh function koi button on hai ya nhi yeh check karne keliye hota hai 
+            let isCapsOn = e.getModifierState("CapsLock"); //to check if caps lock is on or not. getModifierState yeh function koi button on hai ya nhi yeh check karne keliye hota hai jaise numlock etc
             if (isCapsOn) { //agar yeh true hai means caps lock on hai to hume type karnse se rokna hai
                 console.log("cap is on");
                 //it prevents the effect of that event on the ui
-                e.preventDefault();
+                e.preventDefault(); 
             }
-             else if (e.shiftKey == false) { //agar shift key pressed hai 
-                e.preventDefault();;
+            else if (e.shiftKey == false) { //agar shift key pressed hai tabhi yeh allow kare type karne ka
+                e.preventDefault();
                 // console.log("key", e.key);
             }
         });
 
-           //event bhi add kr skte ho
+        //event bhi add kr skte ho
         //agar shift pressed hai
         // input.addEventListener("keydown", function(e){
         //     console.log("e",e);
