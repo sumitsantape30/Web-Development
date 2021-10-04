@@ -1,0 +1,134 @@
+/* universal selector- koi chiz apko sabhipe apply karni hai to use this */
+/* user agent stylesheet yeh styling apko browser deta hai, so yeh body ko 8px ki by default space deta hai */
+
+body{
+    /*2pixel width */
+    /* border: 2px solid red;  */
+    margin: 0px;  /*jo 8px ka margin tha usko 0px kardye*/
+    font-family: sans-seif;
+}
+
+.header-container{
+    /* border: 1px solid black; */
+    height: 5.2rem;
+    background-color: #363333;
+     padding-left: 3rem;
+    /* padding dene se yeh thoda aage jayega */
+    display: flex; 
+    /* header ke andar 2 childrens hai color group wala add cross wala so unko ek line mai lane keliye flex liye */
+    align-items: center;
+}
+
+/* kuch properties common hai to unko hum ek isme dal denge */
+/* agar badme muje changes karna rha to yahipe change karunga */
+.header-container>*{
+    background-color: rgb(75, 73, 73);
+    height: 65%;
+/* relative unit which derives its value from the parent, parent ke size ke comparison mai height ayegi % se */
+    border-radius: 6px;
+}
+
+.color-group_container{
+    width : 40%;
+    margin-right: 1rem;
+    /* iss box ke right margin ko 1rem kiya taki dono boxes ke bich mai thoda distance aaye */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.color{
+    /* mere parent ki jo height hai usse 50% height hogi meri isse */
+    height: 50%; 
+    width: 15%;
+    border-radius: 4px;
+
+}
+
+.pink{
+    background-color: lightpink;
+}
+
+.blue{
+    background-color: lightblue;
+}
+
+.green{
+    background-color: lightgreen;
+}
+
+.black{
+    background-color: black;
+}
+
+/* ***Add cross*** */
+.add-cross_container{
+    width: 20%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+.add-cross_container>*{
+    width: 50%;
+    height: 100%;
+    /* background-color: red; */
+    font-size: 2rem;
+    /* font weight se iski boldness thodi thin hojayegi */
+    font-weight: lighter;
+}
+/*  bas track karne keliye yellow color diya tha
+.plus-container{
+    background-color: yellow;
+} */
+
+.plus-container,.multiply-container{
+    /*for perfectly center an element inside a div */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+ /* icons are trated as text isliye font size etc kam karega */
+.fa-plus,.fa-times{
+    font-size: 2rem;
+    font-weight: lighter;
+}
+
+/* ****Main Container***** */
+.main-container{
+    /* border: 1px solid black; */
+    /* complete screen ki height 100vh hoti hai so -3.5rem */
+    height: calc(100vh - 3.5rem); 
+   background-color: #f2f2f2;
+   padding: 4rem;
+   /* Woh ticket ko thoda biche mai karne keliye humne padding dala */
+}
+
+/* input styling */
+.input-task{
+    background-color: black;
+}
+
+/* UI box that appear after entering key */
+.task-container{
+    /* border: 1px solid black; */
+    background-color: white;
+    height: 8rem;
+    width: 13rem;
+}
+
+.task-main-container{
+    padding: 0.5rem;
+}
+
+.task-header{
+    height: 0.7rem;
+    background-color: black;
+}
+
+.task_id{
+    color: rgb(85, 92, 99);
+    /* isme boht sari margin aagyi hai by default to usko kam karke 0.5 */
+    margin: 0.2rem;
+    margin-left: 0px;
+}
