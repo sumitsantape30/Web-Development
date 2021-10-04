@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        body{
+            margin: 0px;
+        }
+        .parent{
+            height: 100vh;
+            width: 80vw;
+            background-color: lightgreen;
+            /* by default sare childrens ek ke niche ek ayenge coz yeh blocker elements hai so unko ek line mai karne keliye I have fkex property */
+            display: flex;
+            /* flex property se woh sare childrens ek line mai ajayenge */
+            align-items: center;
+            /* align horizontally */
+            justify-content: space-evenly;
+            flex-wrap: wrap; 
+            /* extra elments haito unko wrapt karne mai help hoti hai */
+        } 
+        /* flex: agar mere pas parent shai aur usme childrens hai div type aur unke ek ke bad ek lana hota hai to flex use krte hai */
+        .children{
+            font-size: 2rem;
+            text-align: center;
+            background-color: lightcoral;
+            height: 8rem;
+            width: 8rem;
+            border: 1px solid red;
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div class="children">1</div>
+        <div class="children">2</div>
+        <div class="children">3</div>
+        <div class="children">4</div>
+        <div class="children">5</div>
+        <div class="children">6</div>
+        <div class="children">7</div>
+        <div class="children">7</div>
+
+       
+    </div>
+
+    <p> hello</p>
+
+
+
+</body>
+</html>
