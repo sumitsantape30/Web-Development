@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        *{
+            box-sizing: border-box;
+        }
+
+        body{
+            margin: 0px;
+            background-color: black;
+        }
+
+        .box{
+            height: 100px;
+            width: 100px;
+            /* border-radius: 50%; */
+        }
+
+        .one{
+            background-color: lightskyblue;
+            /* margin is the space outside an element */
+            margin-bottom: 20px;
+            margin-left: 10px;
+            margin-top: 10px;
+        }
+
+        .two{
+            background-color: lightpink;
+            /* padding is space inside an element isliye two ka size badh gya */
+            padding: 10px;
+            border: 5px solid red;
+        }
+
+        .type-b>.two{
+            /* jo height input mai aayi utni hi height ka UI pe print hoga */
+            background-color: red;
+            margin-left: 50px;
+        }
+
+    </style>
+</head>
+<body>
+    <!-- Rendered Height of an element: height provided+ padding-t + margin-t + border-b -->
+    <!-- height: 100px + 10 + 10 + 10 -> 140px -->
+     <!-- width: 100px + 10 + 10 + 10 -> 140px -->
+    <div class="type-a">
+        <div class="box one">1</div>
+        <div class="box two">2</div>
+    </div>
+    <div class="type-b">
+        <div class="box one">1</div>
+        <div class="box-two">2</div>
+    </div>
+   
+</body>
+</html>
