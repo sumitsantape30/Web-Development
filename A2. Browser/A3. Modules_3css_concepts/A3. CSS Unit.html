@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        /* 1rem is relative to html font size -> 
+        responsive design mai use hota h-> woh devide ke layout dekkhe changes krt h*/
+        /* default 1rem -> 16px, html ki default font sie 16px hoti hai*/
+        html {
+            font-size: 15px;
+        }
+        body {
+            margin: 0px;
+            background-color: rgb(196, 196, 37);
+        }
+        /* element is in the form of a box */
+        .box {
+            height: 160px;
+            width: 160px;
+        }
+        .one {
+            background-color: lightskyblue;
+            /* space outside an element  */
+            /* pixels is simple unit, screen ke jo pixel honga uske hisab se chize manage hogi */
+            /* margin-bottom: 20px;
+            margin-left: 50px;
+            margin-top: 10px; */
+        }
+        .two {
+            background-color: lightpink;
+            /* space inside an element */
+        }
+        body>* {
+            border-bottom: 5px solid black;
+        }
+        /* relative unit -> calculate   */
+        /* by default 1rem= 16px hota hai rem */
+        /* rem */
+        .type-b>* {
+            height: 10rem;
+            width: 10rem;
+        }
+        /* vh vw */
+        .type-c>* {
+            height: 40vh;
+            width: 30vw;
+        }
+        .type-d {
+            height: 20rem;
+            width: 20rem;
+            background-color:lightgreen
+        }
+        /* ab iss d ke andar jo 2 blocks hai unko parent ke hisab se style karenge */
+        /* percentage  */
+        .type-d>.one{
+            height:40%;
+            width:50%;
+        }
+        .type-d>.two{
+            height:40%;
+            width:70%;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- px -->
+    <div class="type-a">
+        <div class="box one">1</div>
+        <div class="box two">2</div>
+    </div>
+    <!-- rem -->
+    <div class="type-b">
+        <div class="box one">1</div>
+        <div class="box two">2</div>
+    </div>
+    <!-- vh vw -->
+    <div class="type-c">
+        <div class="box one">1</div>
+        <div class="box two">2</div>
+    </div>
+    <!-- percentage -->
+    <div class="type-d">
+        <div class="box one">1</div>
+        <div class="box two">2</div>
+    </div>
+</body>
+
+</html>
