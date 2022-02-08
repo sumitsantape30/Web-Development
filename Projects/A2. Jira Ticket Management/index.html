@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <!-- 1.5 yeha cdn link dal di ki yahase ayegi meri styling -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@323;400&display=swap" rel="stylesheet">
+    <title>Jira Ticket Manager</title>
+</head>
+
+<body>
+
+    <!-- 1. Toolbox ki container, iss container ke andar 2 chize ayegi action perform karne keliye -->
+    <div class="toolbox-cont">
+        <!-- 1.1 priority color toolbox container -->
+        <div class="toolbox-priority-cont">
+            <!-- 1.3. isme 4 color hai -->
+            <div class="lightpink color"></div>
+            <div class="lightblue color"></div>
+            <div class="lightgreen color"></div>
+            <div class="black color"></div>
+        </div>
+        <!-- 1.2 action button container -->
+        <div class="action-btn-cont">
+            <!-- 1.4 2 buttons hai add and remove ki, inn buttons ko fontawesome pe jake copy karo aur yaha paste -->
+            <div class="add-btn">
+                <i class="fas fa-plus"></i>
+            </div>
+            <div class="remove-btn">
+                <i class="fas fa-times"></i>
+            </div>
+        </div>
+    </div>
+    <!-- yahatak hum mera toolbox jiske andar mai kuch actions ko perform karunga -->
+
+    <!--2. Main container jahape apki sari tickets collect hojayegi-->
+    <div class="main-cont">
+        <!-- 2.1 isme sari tickets collect hongi -->
+    </div>
+
+    <!-- 2.2 page ke center mai muje ek modal chahiye -->
+    <div class="modal-cont">
+        <!-- modal ke andar 2 area hai ek text area, textarea nam ki tag hoti hai jisme aap text fill kr skte ho -->
+        <textarea spellcheck="false" class="textarea-cont" placeholder="Enter your ticket task.."></textarea>
+        <div class="priority-colors-cont">
+            <!-- 2.3 mere iss container mai rahenge 4 colors -->
+            <div class="lightpink priority-color"></div>
+            <div class="lightblue priority-color"></div>
+            <div class="lightgreen priority-color"></div>
+            <div class="black priority-color border"></div>
+            <!--3.1 yeh border modal ke color priority mai by default boarder black pe rakhe hai -->
+        </div>
+    </div>
+    <!-- 3. ticket cotainer ko js file mai dale hai -->
+
+    <script defer src="https://unpkg.com/shortid-dist@1.0.5/dist/shortid-2.2.13.min.js"></script>
+    <!-- cdn ki link upar isliye lagayi taki jo bhi content ayega woh sara pehle load ho fir js file mai use ho -->
+    <script src="./script.js"></script>
+</body>
+
+</html>
