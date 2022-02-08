@@ -1,0 +1,214 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+}
+/* '*' ek special selector hai jo sabhi elements ko select krdega, aap pane sabhi elements pe box sizing ki property add kr sko */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f5f6fa;
+}
+
+/* 1.1. toolbox ko styling de rhe */
+.toolbox-cont {
+    height: 5rem;
+    background-color: #4b4b4b;
+    display: flex;
+    align-items: center;
+}
+
+/* 1.5 toolbox ke andar jo bhi childrens hai, immediate */
+.toolbox-cont > * {
+    margin-left: 4rem;
+    border-radius: 2px;
+}
+
+/*1.2 toolbox ke andar ke jo action buttons hai unko color denge */
+.toolbox-priority-cont {
+    height: 3.5rem;
+    width: 14rem;
+    background-color: #3d3d3d;
+    /* display flex karne se iski flex direction by default hogi row mai */
+    display: flex;
+    justify-content: space-around;
+    /* toolbox ke andar jo bhi elements hai unko centre mai leke ayenge */
+    align-items: center;
+} 
+
+/*1.3 toolbox ke andar ke action button ko styling denge */
+.action-btn-cont {
+    height: 3.5rem;
+    width: 6rem;
+    background-color: #3d3d3d;
+    display: flex;
+}
+/* 1.7 action button container ke andar jo bhi hai  */
+.action-btn-cont > * {
+    /* side by side lane keliye display flex karna hoga */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    font-size: 2rem;
+    color: #d1d8e0;
+}
+/* 1.4 */
+.color {
+    height: 1.2rem;
+    width: 2rem;
+    background-color: lightsalmon;
+    /* color ki border ko curvy banayenge */
+    border-radius: 2px;
+}
+
+/* 1.6 color banayenge */
+.lightpink {
+    background-color: lightpink;
+}
+.lightgreen {
+    background-color: lightgreen;
+}
+.lightblue {
+    background-color: lightblue;
+}
+.black {
+    background-color: black;
+}
+
+/* 1.8 agar mai action button pe hover karu to uska color change ho isliye */
+.action-btn-cont > *:hover {
+    background-color: #485460;
+}
+
+/* 2. modal ki styling */
+.modal-cont {
+    height: 50vh;
+    width: 45vw;
+    background: lightblue;
+    /* position absolute karne se yeh document ke flow mese bahar ajayegi */
+    position: absolute;
+    /* modal center mai ana chahiye, so har ek device ki screen size alag hoti hai so uske hisab se set karenge */
+    /* //vh meri height hai aur mai isko center mai lana chahunga isliye divide by 2. mere box ko minus karunga 100vh mese fir usko 2 se divide karunga to uss device ke screen ke hisab se woh center mai ajayega */
+    top: calc( ( 100vh - 50vh ) / 2 );
+    left: calc( ( 100vw - 45vw ) / 2 );
+    /* humara modal click karne pe display hona chahiye so yahake display ko none rakhdo woh click karne wala event listener dalne ke bad */
+    display: none;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+/* 2.3 modal ke andar ka text area container */
+.textarea-cont {
+    height: 100%;
+    width: 75%;
+    border: none;
+    outline: none;
+    /* mere text area ki size changeable na ho isliye resize none kardenge */
+    resize: none;
+    background-color: #dfe4ea;
+    padding: 2rem;
+    font-size: 1.7rem;
+}
+
+/* 2.2 priority color container inside modal */
+.priority-colors-cont {
+    /* color container mai rakhe hue color */
+    height: 100%;
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #4b4b4b;
+}
+
+/* 2.4 priority color */
+.priority-color {
+    height: 3rem;
+    width: 55%;
+}
+
+/*3. border ka matlab hai ki woh wali box active hai matlab mai jis bhi color pe click karunga modal ke color box mai uske side mai yeh border rahegi */
+.border {
+    border: 5px solid #d1d8e0;
+}
+
+/* 3.1 */
+.ticket-cont {
+    height: 13rem;
+    width: 16rem;
+    background-color: #f1f2f6;
+}
+/* 3.2 */
+.ticket-color {
+    height: 1rem;
+}
+/* 3.3 */
+.ticket-id {
+    height: 2rem;
+    padding: 0.4rem;
+}
+/* 3.4 */
+.task-area {
+    /* mai chahta hu ki tum apne hisab se height calculate krke */
+    height: calc( 100% - 1rem - 2rem - 2rem );
+    padding: 0.4rem;
+    outline: none;
+    font-size: 1.3rem;
+}
+
+/* 4. ticket ke lock ko styling denge */
+.ticket-lock {
+    height: 2rem;
+    display: flex;
+    font-size: 1.5rem;
+    padding-right: 1rem;
+    justify-content: flex-end;
+    color: #a5b1c2;
+}
+
+/* agar maine multiple create kari to woh ek dusre ke side mai properly aani chahiye, sari eksath chipak ke nhi aani chahiye  */
+.main-cont {
+    /* display flex karenge taki sari values ek row mai aajaye, matlab ki next line mai aate rho agar tumhare pas space nhi hai to */
+    display: flex;
+    /* tickets closely wrap thi so unko wrap kardenge */
+    flex-wrap: wrap;
+    /* har ek ticket ko separate karne keliye padding use karenge */
+    padding: 2rem;
+    /* unke bichme gap dalne keliye */
+    gap: 2rem;
+    justify-content: center;
+}
+
+
+@media screen and (min-width: 425px) and (max-width: 768px) {
+    .modal-cont {
+        width: 60vw;
+        left: calc( ( 100vw - 60vw ) / 2 );
+    }
+}
+
+@media screen and (max-width: 426px) {
+    .modal-cont {
+        width: 75vw;
+        height: 55vh;
+        top: calc( ( 100vh - 55vh ) / 2 );
+        left: calc( ( 100vw - 75vw ) / 2 );
+        flex-direction: column;
+    }
+    .textarea-cont {
+        width: 100%;
+        height: 75%;
+    }
+    .priority-colors-cont {
+        flex-direction: row;
+        width: 100%;
+        height: 25%;
+    }
+    .priority-color {
+        width: 17%;
+    }
+    .toolbox-cont > * {
+        margin-left: 2rem;
+        border-radius: 2px;
+    }
+}
