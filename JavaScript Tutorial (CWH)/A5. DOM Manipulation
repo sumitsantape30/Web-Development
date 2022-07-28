@@ -1,0 +1,56 @@
+//DOM manupulation
+
+//document.getElementById used when you want to target an element by its identfier
+
+// document.getElementById('click').click(); button pe click hojayega
+
+//document.getElementById('click').style.border = '5px solid blue'; //so dynamically apne page ke content ko change kr skte using js
+
+let elem = document.getElementById('click')
+
+console.log(document.getElementById('click')); //yeh click id ka complete button ka tag dega
+
+let elemClass = document.getElementsByClassName('container'); //jitne bhi containers hai woh ek array ke form mai elemClass mai ajayenge, HTML collection
+console.log(elemClass);
+
+elemClass[0].style.background = "yellow";
+
+//yeh kam inspect krke console mai karke dekhna, actual code mai changes nhi ayenge
+//humne css mai ek banaya bg-primary, iss class ko iss elemClass ke andar add karegne
+elemClass[0].classList.add('bg-primary');
+elemClass[0].classList.add("text-success");
+
+elemClass[0].classList.remove("text-success");
+
+console.log(elemClass.innerHTML); //isse iss element ke andar ki sari html mil jayegi
+console.log(elemClass[0].innerText); //sara text form dedega
+
+console.log(elem.innerHTML); // yeh complete html deti hai
+console.log(elem.innerText); //yeh inner text dega jo html ke andar hai
+
+console.log(elemClass[0].innerHTML);
+console.log(elemClass[0].innerText);
+
+//to get the element by class name
+
+let elemClassName = document.getElementsByClassName("container-1");
+console.log(elemClassName);
+
+let elembytag = document.getElementsByTagName("div");
+console.log(elembytag);
+
+//ab ek element banayenge and usko elembytag mai dal denge
+let createdElement = document.createElement('p');
+createdElement.innerText = "This is a created para"; //aur uss naye element ke andar yeh text hoga
+elembytag[0].appendChild(createdElement);
+
+//ab replacechild karenge
+let createElement2= document.createElement('b');
+createElement2.innerText = "This is created bold";
+elembytag[0].replaceChild(createElement2, createdElement);
+
+//removechild
+// removeChild(element) --> it remove an element
+
+
+
