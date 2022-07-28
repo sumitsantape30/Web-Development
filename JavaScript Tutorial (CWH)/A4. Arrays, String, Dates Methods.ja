@@ -34,3 +34,11 @@ console.log(str.lastIndexOf("good"));
 console.log(str.slice(0,3));// o to 2 character print kardega
 
 console.log(str.replace("Harry", "Rohan")); // new String print krdega
+
+
+//dates
+var myDate= new Date();
+console.log(myDate);
+console.log(myDate.getTime());
+console.log(myDate.getDay());
+console.log(myDate.getMonth());
