@@ -17,3 +17,8 @@ console.log(jso); //jso ek string hai, can check by using typeof(jso) function
 //json sting ko object mai convert krne keliye
 parsed = JSON.parse(`{"name":"Sumit","Surname":"Santape","a":{"this":"that"}}`); //uparwale object ka json string pass kr rhe hai
 console.log(parsed);
+
+
+//backtick
+let a = 30;
+console.log(`The value if a is ${a}`);
