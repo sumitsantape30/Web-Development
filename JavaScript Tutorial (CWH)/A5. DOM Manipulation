@@ -25,6 +25,50 @@ elemClass[0].classList.remove("text-success");
 console.log(elemClass.innerHTML); //isse iss element ke andar ki sari html mil jayegi
 console.log(elemClass[0].innerText); //sara text form dedega
 
+==========================index.html==================================
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            border: 20px solid red;
+            margin: 3px 0;
+            background-color: cyan;
+            padding: 9px;
+        }
+
+        .bg-primary{
+            background-color: blueviolet;
+        }
+
+
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+
+        <h1>Welcome to the jS Tutorial</h1>
+        <button id="click">Click me</button>
+
+        <div class="container"> This is another container</div>
+
+        <div class="container-1"> This is container 1</div>
+
+    </div>
+
+
+    <script src="code.js"> </script>
+</body>
+
+</html> 
+
+==========================code.js============================================================
+
 console.log(elem.innerHTML); // yeh complete html deti hai
 console.log(elem.innerText); //yeh inner text dega jo html ke andar hai
 
@@ -52,5 +96,10 @@ elembytag[0].replaceChild(createElement2, createdElement);
 //removechild
 // removeChild(element) --> it remove an element
 
+//selecting element using query
+let sel = document.querySelector('.container'); //yeh sirf ek element return karega, pehla container class ka element de dega
+console.log(sel);
 
+let sel2 = document.querySelectorAll('.container'); //yeh nodelist dega sare containers ka element de dega
+console.log(sel2);
 
